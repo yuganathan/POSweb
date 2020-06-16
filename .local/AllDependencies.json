@@ -1397,9 +1397,9 @@
     "restore": {
       "projectUniqueName": "POSweb",
       "projectName": "POSweb",
-      "projectPath": "C:\\Users\\syuganathan\\Documents\\UiPath\\POSWebDemo\\.local",
+      "projectPath": "C:\\Users\\syuganathan\\Documents\\UiPath\\POSwebcheck\\.local",
       "packagesPath": "C:\\Users\\syuganathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\syuganathan\\Documents\\UiPath\\POSWebDemo\\.local"
+      "outputPath": "C:\\Users\\syuganathan\\Documents\\UiPath\\POSwebcheck\\.local"
     },
     "frameworks": {
       "net461": {

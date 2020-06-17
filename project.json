@@ -6,7 +6,7 @@
     "ActivitiesHtmlReportGenerator": "[1.1.6]",
     "UiPath.System.Activities": "[20.4.0-beta.850545]",
     "UiPath.Testing.Activities": "[1.0.0-beta.837692]",
-    "UiPath.UIAutomation.Activities": "[20.4.0-beta.853586]"
+    "UiPath.UIAutomation.Activities": "[20.4.1]"
   },
   "webServices": [],
   "schemaVersion": "4.0",

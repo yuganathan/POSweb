@@ -1391,15 +1391,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\syuganathan\\.nuget\\packages\\": {}
+    "C:\\Users\\jmariam\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "POSweb",
       "projectName": "POSweb",
-      "projectPath": "C:\\Users\\syuganathan\\Documents\\UiPath\\POSwebcheck\\.local",
-      "packagesPath": "C:\\Users\\syuganathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\syuganathan\\Documents\\UiPath\\POSwebcheck\\.local"
+      "projectPath": "C:\\Users\\jmariam\\Documents\\UiPath\\POSweb\\.local",
+      "packagesPath": "C:\\Users\\jmariam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jmariam\\Documents\\UiPath\\POSweb\\.local"
     },
     "frameworks": {
       "net461": {

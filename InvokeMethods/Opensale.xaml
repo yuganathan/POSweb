@@ -87,7 +87,7 @@
                     </ui:Target>
                   </ui:ClickImage.Target>
                 </ui:ClickImage>
-                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                <Delay Duration="00:00:09" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
                 <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="200" DisplayName="Open POS" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
                   <ui:ClickImage.CursorPosition>
                     <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />

@@ -54,7 +54,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="470.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an order with cash tender" Status="STARTED" TestCase="Launch a web browser in the POS system " />
+    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="470.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" TestCase="Launch a web browser in the POS system " />
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470.4,872.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; Return " sap:VirtualizedContainerService.HintSize="433.6,641.6" sap2010:WorkflowViewState.IdRef="WindowScope_9" InformativeScreenshot="55bc528846f79bd5c8af756afec45cdc" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='' /&gt;">

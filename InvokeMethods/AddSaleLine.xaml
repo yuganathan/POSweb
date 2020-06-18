@@ -51,7 +51,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="528.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an order with cash tender" Status="STARTED" TestCase="Click on Add Sales Line and add SKU" />
+    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="528.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" TestCase="Click on Add Sales Line and add SKU" />
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="528.8,1592" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="492,1360.8" sap2010:WorkflowViewState.IdRef="Sequence_7">

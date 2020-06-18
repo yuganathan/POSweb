@@ -48,7 +48,6 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ClickTotal" sap:VirtualizedContainerService.HintSize="772,2415.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -150,7 +149,7 @@
                                 <ui:Region Rectangle="0, 0, 0, 0" />
                               </ui:SetClippingRegion.Size>
                             </ui:SetClippingRegion>
-                            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'vncviewer.exe 10.89.160...'" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
+                            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Sale tax" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
                               <ui:GetOCRText.OCREngine>
                                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                                   <ActivityFunc.Argument>

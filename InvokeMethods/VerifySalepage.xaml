@@ -51,7 +51,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VerifySalepage" sap:VirtualizedContainerService.HintSize="652,3196.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VerifySalepage" sap:VirtualizedContainerService.HintSize="730.4,3196.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Total">
         <Variable.Default>
@@ -75,11 +75,11 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest TestCase="{x:Null}" DisplayName=" StartTest" sap:VirtualizedContainerService.HintSize="610.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="610.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="started" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="610.4,2267.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <t:StartTest TestCase="{x:Null}" DisplayName=" StartTest" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="688.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="started" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,2672" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="492,2012.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,2417.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:GenericValue" Name="Client" />
             <Variable x:TypeArguments="ui:GenericValue" Name="Client1" />
@@ -90,7 +90,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; return verication" sap:VirtualizedContainerService.HintSize="450.4,1920" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="b26e10faebd664ef9309b7a338331af1" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; return verication" sap:VirtualizedContainerService.HintSize="610.4,1920" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="b26e10faebd664ef9309b7a338331af1" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -274,10 +274,40 @@
               </ActivityAction>
             </ui:WindowScope.Body>
           </ui:WindowScope>
+          <If Condition="[CustomerInfo.Contains(&quot;No Customer Information&quot;) OR NoLine.Contains(&quot;No LInes&quot;) OR Total.Contains(&quot;0.00&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_2">
+            <If.Then>
+              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[VerifySale]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                </Assign.Value>
+              </Assign>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="304,215.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[VerifySale]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Throw Exception="[new Exception(&quot;Sale screen not viewed&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+              </Sequence>
+            </If.Else>
+          </If>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="495.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="655.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -291,7 +321,7 @@
             <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="EndTest_2" Orientation="Window" Status="Failed" />
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="495.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="655.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -307,38 +337,8 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <If Condition="[CustomerInfo.Contains(&quot;No Customer Information&quot;) OR NoLine.Contains(&quot;No LInes&quot;) OR Total.Contains(&quot;0.00&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_1">
-      <If.Then>
-        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-          <Assign.To>
-            <OutArgument x:TypeArguments="x:Boolean">[VerifySale]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-          </Assign.Value>
-        </Assign>
-      </If.Then>
-      <If.Else>
-        <Sequence sap:VirtualizedContainerService.HintSize="304,215.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:Boolean">[VerifySale]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-            </Assign.Value>
-          </Assign>
-          <Throw Exception="[new Exception(&quot;Sale screen not viewed&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
-        </Sequence>
-      </If.Else>
-    </If>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="610.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CustomerInfo+NoLine]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="610.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[VerifySale.ToString]" />
-    <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="610.4,22.4" sap2010:WorkflowViewState.IdRef="EndTest_1" Orientation="Window" Status="PASSED" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="688.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CustomerInfo+NoLine]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="688.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[VerifySale.ToString]" />
+    <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="EndTest_1" Orientation="Window" Status="PASSED" />
   </Sequence>
 </Activity>

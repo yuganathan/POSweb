@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TenderAndComplete" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,2484" sap2010:WorkflowViewState.IdRef="TenderAndComplete_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TenderAndComplete" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,2564" sap2010:WorkflowViewState.IdRef="TenderAndComplete_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,6 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TenderAndComplete" sap:VirtualizedContainerService.HintSize="772,2359.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -75,7 +74,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Tender Complete" sap:VirtualizedContainerService.HintSize="652,1372.8" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="3fbfb0e80e1e818ee2b907af6d30c28f" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Tender Complete" sap:VirtualizedContainerService.HintSize="652,1372.8" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="3fbfb0e80e1e818ee2b907af6d30c28f" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -97,7 +96,7 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAfCAYAAABu1nqnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAP4SURBVGhD7ZhbS1VBFMf7TuLlKIpXUtQE9YRIJmgPat5S0NSHEnxSC33QXgwt8sUSb1mWd09ZioZGlpF2ylsfY3X+I2uavdvtc8kaonn4gXvNmllr/jOzZo7nTk6+keHvY4TXhBFeE0Z4TRjhNWGE14QRXhNGeE0EFX519RXV1dVRVlYWxcbGUkpKCuXn51NjYyNNTk5ZfH0+H3V3dwuWl1csbTqoqKigqKgowfb2W0efP0EocV2Fn5ubF2LzIHba2tos/kNDQ7JtYOCupU0H/6zwVVVX5QC3bt2m+fkFmpl5JgSurq6m9vZ2i///Irzf/8XRzoQs/NHRsWNjYWGh6JyUlETHxyeOPkxxcbEMZmdq6rHwGRl5SKWlpZSRkUEeT7w4TZmZmdTcfP2nBOvr62X/p09nRLlDHih1DQ2NtLv70eKPRc/NzaW4uDgqKCig8fEJRwEizeH581mqqamhxMREysvLkz6hxrXjKry640tKSqi//06g/Mw5rngownd0dIhvTPb8+UxKSEiQPpi83++X46mTjo+Pp5iYGAHbrl1rkL6Dg4PSzkRHR1N6err8ZgEizSEtLU3+feHCqfDhxLXjKvzCwqJYSXVg4PF4xK7b2tq2+AcrNShTPt8LeXoODg5FueI+w8PD0led9KVLJfTp0x7t7LyXAmARDg+PxBipqanS9969+/Thwy719fVLG2ABIs0BJwQb6N27HVpcXAo7rh1X4cHa2nrgGDaLI64OCHDkvn49kL7BhEecsbFxseuwcLW1tUJU7tPZ2Sl91UlPTExKu3qMsfAQkb9x6tgP5OTkyDYWINIcICzbQbhx7QQVnsEOef16Tawo6hwPPDs7K33chEd/VTQnIAb7q5NeX1+XdlzqbN/Y2KTp6SfyWy0/oKysXLZBgN/J4eXLVcvY4cRV2xhX4Tc33zjaW1pa5cC4rNjuJjyOJ7cVFRUFEjotU48ejUr7ryYNgdmOC061qzuvvPyK9ANer1e2QYCzygGEE1dtY1yFx+3v9V6k3t7ewApP09LSMj14MGwpO/iBxf6joz8mcOPGTVEHuQ21ldtaW1uFDTsQrxW2RyK8WmtxYfLOxCuE/QAEOKscQDhx1X5MUOHVQexUVlZZ/LGDkITdb3//M+3t7cuLETc/jjx2Bl4s7BeJ8LCprwvEz87OFjHwXGQ7BDirHJhQ49r7ASH8r8C/ALq6ugJPycviqYXBkSTe9z09PY7PSpwIPLfUBYDwaFtZ8YnFxBjJycnU1NQkXhHsF6nwAGUOlxri4tLHt1rPWYCzyEEl1Lh2XIU3/DmM8JowwmvCCK8JI7wmjPCaMMJrwgivCSO8JozwmjDCa+EbfQcY32MzJaAKSQAAAABJRU5ErkJggg==" />
                     </ui:WaitImageAppear.Image>
                     <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="32cde5b6-4961-4dee-9127-c3674d19d4db" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="32cde5b6-4961-4dee-9127-c3674d19d4db" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>

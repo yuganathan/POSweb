@@ -76,9 +76,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <t:StartTest TestCase="{x:Null}" DisplayName=" StartTest" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,2467.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,2364.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,2212.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,2110.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:GenericValue" Name="Client" />
             <Variable x:TypeArguments="ui:GenericValue" Name="Client1" />
@@ -89,13 +89,13 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; return verication" sap:VirtualizedContainerService.HintSize="610.4,1715.2" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="b26e10faebd664ef9309b7a338331af1" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; return verication" sap:VirtualizedContainerService.HintSize="610.4,1612.8" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="b26e10faebd664ef9309b7a338331af1" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416.8,1568" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416.8,1465.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -147,14 +147,13 @@
                       </ui:Target>
                     </ui:GetOCRText.Target>
                   </ui:GetOCRText>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="375.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[CustomerInfo]" />
                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1016" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'client 10.89.160.22'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
+                    <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Fid No Line" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
                       <ui:WaitImageAppear.Image>
                         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAkCAYAAACnmvl3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOfSURBVHhe7ZbbK21RFIfP/+SeO6FQJOXyQsoreaDkgSiRSygRXtxSIuVSolAeRCkeJLd48OBNUq5lnH7jrLnbe4299t5rneWk0/hq1lzzsuaYe39zzPWLFMWGSqEIVApFoFIoApVCEagUikClUAQqhSJQKRSBSqEIVApF4IsUCQkJFBcXR729vVYLUV1dHbednZ1ZLe4w73x8fLRa/oBntJeVlVkt/w4TE0pSUhKVlpbSwsKC1ftzmJmZofHxcfr8/LRa3OGrFPih7u/vue27pHh9faWRkRGanZ21Wv4dJqaJiQkaGxujzMxMft7d3bVGhOL1T/lb8vLyOK63tzerxR2+SYGSlpZGbW1t3GaX4uDggGpqanhMQUEBdXV10dPTE/eFw0kKe6Ywz8XFxdTT00M5OTlcPzo64n6Aem1tbWBtZLSXlxcura2tlJWVxUIXFhbS9PS0NUtij6mvr4+fBwYGAnGUlJTw3rKzs2llZcXz2k7zou0X66M/uLjFNymSk5P59CCIi4uLEClub2+5HxtYWlqijo4O7mtubrbeIHErBcrw8DBnENQrKyu5/+7ujlJSUqiiooJP9OTkJPd3d3fT2toa1/v7++nw8JCWl5f5j3TCxHR+fk6Xl5dUVVXFz/Pz8yFxNDU10eLiIm1tbXlaO1LM0fa7v78fyGDr6+u0ubnJ7W7wVYrn52fKzc2lhoaGEClM4ENDQzweaRWnA8UpxbqVAut+fX1xW2JiIqWmpnJ9bm6O++Pj4/md5r04XcfHx1zHSWxpaaGpqSl6eHjgeeEwc4NLfX09X2kmjoyMDPr4+ODxXteONC/afsGPuT4gBTAbMrYGSwGzwXdIEfzhiVhMPGbtzs5Ourq6CpSbmxvuPz095QyHrIU/AenXCRMTTiBO5PX1tdUTPg6va0eaF22/ID8/n8f8GCne39+pqKiIg0KxXx9Iq+3t7dyHE+KE+QMGBwdpdHSUy8bGhmspsDZSMe741dVV2tnZ4XciFeO0IjXv7e1xQXzp6emBE2jHSVQQLg6va0eaF4sU5eXlPAYHFPK6xXcpADaCoFDsH5pIc0iZsX5oBpfGxkbXUgB8hOE6Q2rHh1t1dTXf6ScnJ1xHG8bjx9ze3rZmSdxKAbyu7TQvlv3i8JgrxB5PLPgihfJ/oVIoApVCEagUikClUAQqhSJQKRSBSqEIVApFoFIoApVCEagUikClUAQqhSJQKRSBSqEIVArFBtFvIRpisdQVU6EAAAAASUVORK5CYII=" />
                       </ui:WaitImageAppear.Image>

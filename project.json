@@ -35,6 +35,11 @@
         "editingStatus": "InProgress",
         "testCaseId": "e015537e-550d-44a8-8f73-a9f0390f1bca",
         "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c524ea34-6923-43af-b921-a6dfc0f05604",
+        "fileName": "TestCaseFlowchart.xaml"
       }
     ]
   },

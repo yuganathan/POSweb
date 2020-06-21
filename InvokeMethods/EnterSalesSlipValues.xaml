@@ -1,11 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="EnterSalesSlipValues" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="VerifyReturnItems" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="ScenarioName" Type="InArgument(x:String)" />
+    <x:Property Name="ReturnItemsCheck" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>794.4,4154.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>843.2,3684.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EnterSalesSlipValues_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -56,7 +57,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EnterSalesSlipValues" sap:VirtualizedContainerService.HintSize="772,3989.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EnterSalesSlipValues" sap:VirtualizedContainerService.HintSize="772,3520" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="SelectToReturn" />
       <Variable x:TypeArguments="x:String" Name="SelectAllItems" />
@@ -67,8 +68,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Return a sales slip" Status="STARTED" TestCase="Enter Sales Slip details" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,3772" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Check the popup shown for returning the items" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,3302.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -76,72 +77,24 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="693.6,3540.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+        <Sequence sap:VirtualizedContainerService.HintSize="693.6,3071.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach SalesReturns Window " sap:VirtualizedContainerService.HintSize="652,3043.2" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="38d64efaf76569f1b64178dc7250080c" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach SalesReturns Window " sap:VirtualizedContainerService.HintSize="652,2573.6" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="38d64efaf76569f1b64178dc7250080c" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,2896" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,2426.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click Store " sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
-                    <ui:ClickImage.CursorPosition>
-                      <ui:CursorPosition OffsetX="0" OffsetY="0" Position="BottomRight" />
-                    </ui:ClickImage.CursorPosition>
-                    <ui:ClickImage.Image>
-                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVeSURBVGhD7VlXSyVLEL7/yTWwPohgWnNeUFFR14j6YALDgxEfBEXMiKKLrpjFsCIqophzVhQUxDU+iAEVQ1++8vTcmXFGz9OOXuaDYu2ar/t83VXVZ6fOP9vb2+yzmi5eK9PFa2W6eK3slfiGhgYWHR3NPDw8mJ2dHXNzc2MxMTGsp6dHwvsIJhFfWVnJbGxsyIKDg0k0xGP87ds3NjQ0JHAnJyfJX1FRIfj+tknE47QhCJvgvpWVFdoI/JmZmYK/tLT0Y4m3t7cnQY2NjRLS9PQ0m5mZEcYhISHEE9vy8jI9+/nzJz1HpJycnFhUVBTr6OgQ5sLc3d1pDvxhYWHEg39zc5MVFxezwMBAmu/r68tKSkokc8UmER8aGkqLuri4sIKCAtbb28vW1tYkE2BlZWXMx8eHuJGRkSwnJ4d4PBqolaSkJBYbG0tjW1tb1traKsz39vYmPyLq7+9PPPhzc3PJD9H4fGwCY6zL54pNIn5gYEBIHW4ODg60eGdnp2Qi6gHPedosLS3RCcJXW1sr8LKyssgXFBQk+CAOvvDwcLaxsUG+ubk52jT8fX195EO0kQ2oO0SFz+cmEQ9D+GtqalhiYuKrjcDPeXLxSAHOQ51wHm4p+HD6PIpcfFVVlcBDZDhvfHycTU1Nkfn5+ZF/eHhY4HJ7JV5u/f39Qo4j3NwvF49cxxi5yjmwkZER8sMmJibIx8U3NTUJPD5fzeR1AxPE4+rDAtXV1a9IXV1dwiI8zHLx7e3tAmd1dVWY293dLfiRWvBx8c3NzQKvra2NfEgdREFuuDQ4l5sgngtE2H79+iUQkGt5eXn0TOnki4qKaAxhKHT46uvrBR6uV/hwGXCfknhxzvPvExwUDrSlpUWSitwE8VtbWywhIYEmw7y8vKja+ZcUTFyIaWlp5MO1l5GRQcWFKMCHIk9NTWVxcXE0RtEhAnyukngYL258NjaNgsYY/75bsOvr61REuHshiv/3ALcNwirmooACAgJIGMTwsGKDuFmwAdw+mMtvD25q4iGwsLCQnvPPxiYWFhYkPG7vFuxHNl28Vvb/EL+zd8ha2ro/lUnEfzbo4rWCLl4r6OK1gi5eK+jitYIuXiuoin96emJ1dXXM0dGRmZubs+/fv7OxsTHD0xcYwwEeHx+p62ViYkJdaCXgpd/V1ZXW8fT0pH7Pe1AVX15eziwsLOjtfXFxkV6ozczM6D2XwxjO2dkZ+/HjB71U45mSeLwfQzQOYn5+nl7ksVH0fN6Covj7+3v29etX6kly4JTRn0xOTqaxMRwAbRCMb25uaKNy8c/Pz/Sijt6kGCkpKdS9eAuK4nd3d2nns7OzBs8LcNJWVlb0tzEc4Pj42PAXUxS/v7+vuA6avPBfXV0ZPK+hKB49HExEKoiBvIT/4uLCKI4cSuJHR0eJf3R0ZPC8AD1T+NF4UoOi+Ovra2ZqakpCxMjOzqYF//z5YxRHDiXxv3//Jr78hHd2dsgvj4gYqgWbnp5OjR+c7O3tLTWO0CjCgqenp0ZzxPhr4hF29COxAAw/BOCUv3z5wu7u7ozmiKEkHlcr5srTBgcCP7poalAVz3FyckIGoBhx5clhDAdQEn9wcEAi0S4UAy1tpCUiqgZV8ejLi+/rh4cH6gLjNyMOYzhiKIkH0BfNz883jF4QHx/PIiIiDCNlqIrHPevs7Ey3ASofvzEhn8/Pzw0M4zgIO/IWhi8iiORjnlroIOMLDE1atLrRbEXqvZXvgKr4y8tL+sa0trZmlpaWlNt7e3uGpy8whoOOMa8JuR0e/veZ6BgjatggfgcYHBw0PFHHuzn/kaGL1wq6eK2gi9cGjP0LkJETSpMxZXwAAAAASUVORK5CYII=" />
-                    </ui:ClickImage.Image>
-                    <ui:ClickImage.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a26c7b3-bbb2-4251-a2d8-ffa104188ea0" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:ClickImage.Target>
-                  </ui:ClickImage>
-                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click Clear in Store field" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
-                    <ui:ClickImage.CursorPosition>
-                      <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
-                    </ui:ClickImage.CursorPosition>
-                    <ui:ClickImage.Image>
-                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAtCAYAAADhoUi4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJMSURBVGhD7ZfLy2lRGIfP/6SIT67JbSImlDIQUUYoolwmLikDSUpkIMZGlIEMlEtRSi4J/8l7Wru+snnPOd/2Lc7uaw2e0f6tt/fZ7bXWu39dr1f4STAhscOExA4TEjtMSOwwIbHDhMTOy4RGoxHkcjlwu91gNBpBoVCATCYDrVYLLpcLUqkUDIdDdO13oC40m83A6/WCRCL5Eh6PB+bzOVrrGagKDQYDUKvVaON/Q6PRwGQyQWsKhZrQer0GnU730KzFYoF0Og31eh2azSYUi0Ww2+1o7nA4oLWFQE0oHA4/NFkqleB0OqH5brcLcrmcly+Xy2hWCFSEVqsVt+Fvm8tms2j2FiL1mTeZTFAoFNCcEKgItVotnszHxwfsdjs0e0+n0+EOEuzZM1ARisViPKFQKITm3gEVoftjmuwdLPcOqAiRi/JWiJxoWO4dvESoVquhuXdARcjv9/OEaJxWz0JFKJPJ8IR8Ph+aewdUhHq9Hk+I3EmbzQbN3hMIBCASiUC/34fz+YxmhEBFaL/fg0ql4klFo1E0e0u73eatMZvNcDwe0exXoSJEyOfzvOYIyWQSnc8ulwt3Gd9PF+SX4j4rFGpC5M06HA5egwS9Xg/xeByq1So0Gg1uOMVyVqsVttstWlsI1IQIy+USbDbbQ7P/wmAwwHQ6RWsKhaoQgbzlRCLx8Dn9iWAwyA23WK1noC70yWKxgEqlwo1FZLMrlUqQSqXcL7jT6eSO+vF4jK79Di8T+l8wIbHDhMQOExI7TEjsMCGx88OErvAb3QrMRQY2DZ4AAAAASUVORK5CYII=" />
-                    </ui:ClickImage.Image>
-                    <ui:ClickImage.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="591a49c5-2077-4723-9fc6-641f816d2c08" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:ClickImage.Target>
-                  </ui:ClickImage>
-                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into Store field" EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="False" Text="9910[k(enter)]">
-                    <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a5b27a7-48e9-4832-b219-989fcf053534" InformativeScreenshot="4f7aceac6dff5d01abf7fec5b7acffca" Selector="&lt;ctrl name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:TypeInto.Target>
-                  </ui:TypeInto>
                   <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click Date field" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
                     <ui:ClickImage.CursorPosition>
                       <ui:CursorPosition OffsetX="0" OffsetY="0" Position="BottomRight" />
@@ -160,7 +113,7 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Date value" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="061820" KeyModifiers="None" SpecialKey="False">
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Date value" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="062120" KeyModifiers="None" SpecialKey="False">
                     <ui:SendHotkey.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4e6d6ac7-dea2-4730-b56c-9f5d921580c7" InformativeScreenshot="c6fb7414bfb743eef17f033672b15861" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
                         <ui:Target.TimeoutMS>
@@ -202,7 +155,7 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into Slip # field" EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" SendWindowMessages="False" SimulateType="False" Text="39434[k(enter)]">
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into Slip # field" EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" SendWindowMessages="False" SimulateType="False" Text="39446[k(enter)]">
                     <ui:TypeInto.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="569e73ce-b83a-4788-9fb6-fd0168f70648" InformativeScreenshot="5685a2b8a4596bf3db4f62e6e50746f9" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
                         <ui:Target.TimeoutMS>
@@ -441,7 +394,7 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_7">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[VerifyReturnItems]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[ReturnItemsCheck]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">True</InArgument>
@@ -458,7 +411,7 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[VerifyReturnItems]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[ReturnItemsCheck]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">False</InArgument>

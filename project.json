@@ -4,6 +4,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "ActivitiesHtmlReportGenerator": "[1.1.6]",
+    "UiPath.Excel.Activities": "[2.8.5]",
     "UiPath.System.Activities": "[20.4.0-beta.850545]",
     "UiPath.Testing.Activities": "[1.0.0-beta.837692]",
     "UiPath.UIAutomation.Activities": "[20.4.1]"
@@ -34,12 +35,22 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "e015537e-550d-44a8-8f73-a9f0390f1bca",
-        "fileName": "TestCase.xaml"
+        "fileName": "TestCase-Sales.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "c524ea34-6923-43af-b921-a6dfc0f05604",
         "fileName": "TestCaseFlowchart.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c90030f3-e77d-468b-9632-6bba8230b606",
+        "fileName": "TestCase-Return.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fa9a5c4e-577e-482d-87b1-8d40a6451eed",
+        "fileName": "TestCase-Sales&Returns.xaml"
       }
     ]
   },

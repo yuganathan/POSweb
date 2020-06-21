@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ClickTotal" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,2927.2" sap2010:WorkflowViewState.IdRef="ClickTotal_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ClickTotal" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="TransactionCheck" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="ScenarioName" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>843.2,2722.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ClickTotal_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,23 +57,23 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ClickTotal" sap:VirtualizedContainerService.HintSize="772,2762.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ClickTotal" sap:VirtualizedContainerService.HintSize="772,2557.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="saletax" />
       <Variable x:TypeArguments="x:String" Name="total" />
       <Variable x:TypeArguments="x:String" Name="ChooseTenderType" />
-      <Variable x:TypeArguments="x:Boolean" Name="VerifyTenderType" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" TestCase="Click on Tota Amount on the right bottom on the screen" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,2442.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Check the Transaction Summary shown" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,2340" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -72,25 +81,25 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="693.6,2211.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence sap:VirtualizedContainerService.HintSize="693.6,2108.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window " sap:VirtualizedContainerService.HintSize="652,1673.6" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="e6f288c71ee56ef5b6c14da110dee9ae" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window " sap:VirtualizedContainerService.HintSize="652,1611.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="e6f288c71ee56ef5b6c14da110dee9ae" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="533.6,1526.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="533.6,1464" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="200" DisplayName="Click Image 'client 10.89.160.21'" sap:VirtualizedContainerService.HintSize="492,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click Total" sap:VirtualizedContainerService.HintSize="492,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
                     <ui:ClickImage.CursorPosition>
                       <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
                     </ui:ClickImage.CursorPosition>
@@ -108,7 +117,6 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="492,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
                   <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="492,1224" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="ui:GenericValue" Name="VncviewerExe" />
@@ -156,7 +164,7 @@
                                   <ActivityFunc.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                                   </ActivityFunc.Argument>
-                                  <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_6" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[saletax]">
+                                  <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_6" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="3" Text="[saletax]">
                                     <ui:GoogleOCR.AllowedCharacters>
                                       <InArgument x:TypeArguments="x:String">
                                         <Literal x:TypeArguments="x:String" Value="" />
@@ -181,7 +189,7 @@
                                 </ui:Target>
                               </ui:GetOCRText.Target>
                               <ui:GetOCRText.Text>
-                                <OutArgument x:TypeArguments="ui:GenericValue">[VncviewerExe]</OutArgument>
+                                <OutArgument x:TypeArguments="x:String">[saletax]</OutArgument>
                               </ui:GetOCRText.Text>
                             </ui:GetOCRText>
                             <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,472" sap2010:WorkflowViewState.IdRef="Sequence_9">
@@ -205,13 +213,13 @@
                                   </ui:Target>
                                 </ui:WaitImageAppear.Target>
                               </ui:WaitImageAppear>
-                              <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get " sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
+                              <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get " sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
                                 <ui:GetOCRText.OCREngine>
                                   <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                                     <ActivityFunc.Argument>
                                       <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                                     </ActivityFunc.Argument>
-                                    <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_7" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[total]">
+                                    <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_7" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="3" Text="[total]">
                                       <ui:GoogleOCR.AllowedCharacters>
                                         <InArgument x:TypeArguments="x:String">
                                           <Literal x:TypeArguments="x:String" Value="" />
@@ -235,6 +243,9 @@
                                     </ui:Target.WaitForReady>
                                   </ui:Target>
                                 </ui:GetOCRText.Target>
+                                <ui:GetOCRText.Text>
+                                  <OutArgument x:TypeArguments="x:String">[total]</OutArgument>
+                                </ui:GetOCRText.Text>
                               </ui:GetOCRText>
                               <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_3">
                                 <ui:SetClippingRegion.Size>
@@ -257,7 +268,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WindowScope>
-          <If Condition="[saletax.Contains(&quot;Sales&quot;) OR total.Contains(&quot;Total&quot;)]" sap:VirtualizedContainerService.HintSize="652,404.8" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[saletax.Contains(&quot;Sales&quot;) OR total.Contains(&quot;Total&quot;)]" sap:VirtualizedContainerService.HintSize="652,364.8" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -265,7 +276,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="304,255.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -273,13 +284,12 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[VerifyTenderType]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[TransactionCheck]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                   </Assign.Value>
                 </Assign>
-                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Choose a Tender Type screen is displayed" />
               </Sequence>
             </If.Then>
             <If.Else>
@@ -291,13 +301,13 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[VerifyTenderType]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[TransactionCheck]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Throw Exception="[new Exception(&quot;Choose a Tender Type screen is not displayed&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                <Throw Exception="[new Exception(&quot;Transaction Summary not shown&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
               </Sequence>
             </If.Else>
           </If>
@@ -321,6 +331,5 @@
       </TryCatch.Catches>
     </TryCatch>
     <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="EndTest_2" Orientation="Window" Status="PASSED" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="730.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[VerifyTenderType.ToString]" />
   </Sequence>
 </Activity>

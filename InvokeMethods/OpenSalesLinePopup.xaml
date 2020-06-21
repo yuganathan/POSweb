@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="VerifySKUPopup" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,1958.4" sap2010:WorkflowViewState.IdRef="VerifySKUPopup_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="VerifySKUPopup" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="SalesPopupCheck" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="ScenarioName" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>843.2,1753.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>VerifySKUPopup_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -47,29 +56,24 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VerifySKUPopup" sap:VirtualizedContainerService.HintSize="730.4,1793.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VerifySKUPopup" sap:VirtualizedContainerService.HintSize="730.4,1588.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="null" Name="enter" />
-      <Variable x:TypeArguments="x:String" Default="null" Name="build" />
-      <Variable x:TypeArguments="x:String" Default="null" Name="repair" />
-      <Variable x:TypeArguments="x:Boolean" Name="VerifySKU" />
+      <Variable x:TypeArguments="x:String" Default="null" Name="SKUentry" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" TestCase="Verify the Popup Add Sale Line and " />
+    <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Verify the Add Sale Line Popup shown" />
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,1371.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,1116.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
-          <Sequence.Variables>
-            <Variable x:TypeArguments="ui:GenericValue" Name="Client" />
-            <Variable x:TypeArguments="ui:GenericValue" Name="Client1" />
-            <Variable x:TypeArguments="ui:GenericValue" Name="Client2" />
-          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -87,12 +91,15 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find SKU" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
-                    <ui:WaitImageAppear.Image>
-                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAaCAYAAACn4zKhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATrSURBVGhD7VhrTxtXEO2P4/3GRbyEABeQAfEoSG4AEQKCEJChfIAKkSogQiGGxDKNi6EKKDyCQgKpAk5oIKK8X/kTNzkjzdXd9S7CWCX7YT8c4Xvu7HhnztyZa364vPwibHxf2CJYALYIFoAtggVgi2AB2CJYALYIFoAtggVgi2ABhImQkZEhYmJiTFFb+7PG3irw+6dFTU2NcDgcIi4ujuLAuy4uLmnsOL6pqacafmNjQ6SlpdGex+Mh7vj4RMa9sLCgsQfq6+tpr7u7O2wvKytLBINB+jw397dIT08Ps2GYiuBw/Cjy8/PD0NbWprG/Dj5+3Cafo6OjhvvR4vHjMZmskpISSn5mZiatk5KSxNu369LWSIRQ6AMlDXxra6u4uLgk/qYi7O8fEL+5uUXr4eFhUVlZqbFRYSqCvlKiAV4CPv8vEVAw8A8xmDs8PCJBwHd1dUleH9/u7mdRUFBAnNv9izg7O5e2NxVhZWVFJCQkiPPzC1q3t7eL+/c7NTYqohIBRx+2y8srorPzAR3n1NRU0dfXJ1+grKxMBsJAgrD/8OHvorjYSdWam5srHj0aNvT/4sW8cLnKRUpKimafER8fT3bT039q+E+fdsTOzq6GU+M7ODgUpaWltK6qqqKkq7Y3FcHrnfwWV7Fcl5dXXFmAUYmQnZ1Ntqg4VBFaFb80Pz8yMiJycnKIQ6AeT484OTkVPT29xCH5AwO/CafTSWucGiP/hYWFoq6uTu6pcLlcZIci6O8fEEtLy2EJZXB8ExMT32ZIrfSPFqK3jVSE588D0t4ILS33wnwAEc+EV69WpS0SCFu32y05fBG4xsZGyaFHg+NqQAvA8ASHowsOFYuKxvfzKWL/6Kdqm9Dj9es12ZIYiYmJlKT5+XmNrRof25olJ1IRICTmj9P5E3UDfGZhkDfMRr0PwFQEM7x8uShtOUmTk1OSQ6LBVVRUSE4vwuzsHK1jY2NpKG5v/0vg3ry+vkF27H9s7A/pywxocU+eeEl8vSBer1faqfFVV1fLz8+e+TT+gJu0IxRQcnKyzJPf76e4eN8IUbUjTtLMzIzkxsfHiUMPZ04vgs/no7UZMANgx/4Dgb+kr+tidXVVziO0NeY5PgxK3IJQsVgjce/fb2p84PRhDwgGZzV7AE4o9tBasYYA7979Q9ze3n/0fG/vr6K5uZk+861Lj+8iAu7NWKMl4VTogYEKOyP/euCIQ1T0eP0eqhfPA9zO9PGdnp5JsTAbMK9UH2yPS4TKHx0d090fexwXnwwzqF1Exa2KMDQ0RGt1JvAdHklCMlFxaC3griMCJxqtDf2XeVQlqhB7RidBjQ8nACcBPP9QY9y920I8WhxmDzi8H66d4BHH1laIePwuuHOngVoibHEaMefQJrHGbUz1zYh4MANXJclIBL414crZ0dFBQxh9FBx+JOEejxmCNf7qB/NVIuCINzQ0kB37w2DkOABcGdnerMhgw/b8SxdAYlVf+MwFBAwODmr84MrLM2ht7Q3Zcr7MEPFgBiIVAYO2qKiIqgLPoN0g0QggLy+PXhS/cCEGeik/dx0RALQUDG98J//bAv7QHtD6VFszEYCmpibagw0uCsyHQiEqJAxY3LpwFcbpVsUC0KLw3XyxwDtBFNXGCGEi2Lh92CJYALYIFoAtggWgEeHz/ql46gvYuFUExFeMp03oN7XIVgAAAABJRU5ErkJggg==" />
-                    </ui:WaitImageAppear.Image>
-                    <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0e82a68d-40b2-41c0-af7e-c2a471fe1d5f" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click Add sale Line" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                    <ui:ClickImage.CursorPosition>
+                      <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                    </ui:ClickImage.CursorPosition>
+                    <ui:ClickImage.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                    </ui:ClickImage.Image>
+                    <ui:ClickImage.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3be89d4-7fee-4fb0-a7d1-72a5a6370aca" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -100,15 +107,15 @@
                           <InArgument x:TypeArguments="ui:WaitForReady" />
                         </ui:Target.WaitForReady>
                       </ui:Target>
-                    </ui:WaitImageAppear.Target>
-                  </ui:WaitImageAppear>
-                  <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get SKU" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_5">
+                    </ui:ClickImage.Target>
+                  </ui:ClickImage>
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get SKU" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_5">
                     <ui:GetOCRText.OCREngine>
                       <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                         <ActivityFunc.Argument>
                           <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                         </ActivityFunc.Argument>
-                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_5" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[enter]">
+                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_5" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[SKUentry]">
                           <ui:GoogleOCR.AllowedCharacters>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />
@@ -123,7 +130,10 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="8bfa005c-89aa-46ed-9a9b-026be2d3cc2a" InformativeScreenshot="e1f34462d3f9d9a63e7d03b25c3b1a20">
+                      <ui:Target Element="{x:Null}" Id="8bfa005c-89aa-46ed-9a9b-026be2d3cc2a" InformativeScreenshot="ce2c9f955af60be11c1c259eb97f7785" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target.ClippingRegion>
+                          <ui:Region Rectangle="312, 377, 92, 33" />
+                        </ui:Target.ClippingRegion>
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -132,6 +142,9 @@
                         </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:GetOCRText.Target>
+                    <ui:GetOCRText.Text>
+                      <OutArgument x:TypeArguments="x:String">[SKUentry]</OutArgument>
+                    </ui:GetOCRText.Text>
                   </ui:GetOCRText>
                   <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_1">
                     <ui:SetClippingRegion.Size>
@@ -142,11 +155,11 @@
               </ActivityAction>
             </ui:WindowScope.Body>
           </ui:WindowScope>
-          <If Condition="[enter.Contains(&quot;Enter&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[SKUentry.Contains(&quot;Enter&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
               <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="x:Boolean">[VerifySKU]</OutArgument>
+                  <OutArgument x:TypeArguments="x:Boolean">[SalesPopupCheck]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
                   <InArgument x:TypeArguments="x:Boolean">True</InArgument>
@@ -162,13 +175,13 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[VerifySKU]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[SalesPopupCheck]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Throw Exception="[new Exception(&quot;Sale screen not viewed&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                <Throw Exception="[new Exception(&quot;Add Sales Line popup is not shown&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
               </Sequence>
             </If.Else>
           </If>
@@ -205,8 +218,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="688.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Verification SKU &quot;+VerifySKU.ToString]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="688.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[build+repair+enter]" />
     <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="EndTest_2" Orientation="Window" Status="PASSED" />
   </Sequence>
 </Activity>

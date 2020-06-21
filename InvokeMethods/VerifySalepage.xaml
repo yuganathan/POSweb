@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="VerifySalepage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,2849.6" sap2010:WorkflowViewState.IdRef="VerifySalepage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="VerifySalepage" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:t="clr-namespace:TestReportGenerator;assembly=TestReportGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="SalePageCheck" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="ScenarioName" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>843.2,2025.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>VerifySalepage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,81 +57,49 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VerifySalepage" sap:VirtualizedContainerService.HintSize="730.4,2684.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VerifySalepage" sap:VirtualizedContainerService.HintSize="730.4,1860.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="Total">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">null</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="NoLine">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">null</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="CustomerInfo">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">null</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Boolean" Name="VerifySale" />
+      <Variable x:TypeArguments="x:String" Default="null" Name="Total" />
+      <Variable x:TypeArguments="x:String" Default="null" Name="NoLine" />
+      <Variable x:TypeArguments="x:String" Default="null" Name="CustomerInfo" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <t:StartTest TestCase="{x:Null}" DisplayName=" StartTest" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="Place an Order With cash tender" Status="STARTED" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,2364.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <t:StartTest DisplayName=" StartTest" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Verify the Sales &amp; Returns page" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,1643.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,2110.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
-          <Sequence.Variables>
-            <Variable x:TypeArguments="ui:GenericValue" Name="Client" />
-            <Variable x:TypeArguments="ui:GenericValue" Name="Client1" />
-            <Variable x:TypeArguments="ui:GenericValue" Name="Client2" />
-          </Sequence.Variables>
+        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,1388.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; return verication" sap:VirtualizedContainerService.HintSize="610.4,1612.8" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="b26e10faebd664ef9309b7a338331af1" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Sale &amp; return verication" sap:VirtualizedContainerService.HintSize="610.4,891.2" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="b26e10faebd664ef9309b7a338331af1" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416.8,1465.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,744" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find customer" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
-                    <ui:WaitImageAppear.Image>
-                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
-                    </ui:WaitImageAppear.Image>
-                    <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2555fe0f-8b49-493e-ac8e-f82e9f795841" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:WaitImageAppear.Target>
-                  </ui:WaitImageAppear>
-                  <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get Customer" sap:VirtualizedContainerService.HintSize="375.2,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_15">
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Customer" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_15">
                     <ui:GetOCRText.OCREngine>
                       <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                         <ActivityFunc.Argument>
                           <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                         </ActivityFunc.Argument>
-                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_15" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[CustomerInfo]">
+                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_15" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="3" Text="[CustomerInfo]">
                           <ui:GoogleOCR.AllowedCharacters>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />
@@ -137,7 +114,10 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="4ab4d079-c9a3-4cd6-98c6-d7cef5f4c11b" InformativeScreenshot="d8829bce4f4209d09ef30af711991358">
+                      <ui:Target Element="{x:Null}" Id="4ab4d079-c9a3-4cd6-98c6-d7cef5f4c11b" InformativeScreenshot="4e8191f4b38f14838a1cedd54588a097" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target.ClippingRegion>
+                          <ui:Region Rectangle="51, 141, 175, 26" />
+                        </ui:Target.ClippingRegion>
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -146,135 +126,104 @@
                         </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:GetOCRText.Target>
+                    <ui:GetOCRText.Text>
+                      <OutArgument x:TypeArguments="x:String">[CustomerInfo]</OutArgument>
+                    </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1016" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get No line" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_16">
+                    <ui:GetOCRText.OCREngine>
+                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                        <ActivityFunc.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                        </ActivityFunc.Argument>
+                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_16" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="3" Text="[NoLine]">
+                          <ui:GoogleOCR.AllowedCharacters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:GoogleOCR.AllowedCharacters>
+                          <ui:GoogleOCR.DeniedCharacters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:GoogleOCR.DeniedCharacters>
+                        </ui:GoogleOCR>
+                      </ActivityFunc>
+                    </ui:GetOCRText.OCREngine>
+                    <ui:GetOCRText.Target>
+                      <ui:Target Element="{x:Null}" Id="98e999bc-0bc2-45c3-8bfd-48dfc6873510" InformativeScreenshot="8e66e8419cdd1929a8cccc1a6f612000" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target.ClippingRegion>
+                          <ui:Region Rectangle="564, 228, 134, 28" />
+                        </ui:Target.ClippingRegion>
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetOCRText.Target>
+                    <ui:GetOCRText.Text>
+                      <OutArgument x:TypeArguments="x:String">[NoLine]</OutArgument>
+                    </ui:GetOCRText.Text>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Fid No Line" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
-                      <ui:WaitImageAppear.Image>
-                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAkCAYAAACnmvl3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOfSURBVHhe7ZbbK21RFIfP/+SeO6FQJOXyQsoreaDkgSiRSygRXtxSIuVSolAeRCkeJLd48OBNUq5lnH7jrLnbe4299t5rneWk0/hq1lzzsuaYe39zzPWLFMWGSqEIVApFoFIoApVCEagUikClUAQqhSJQKRSBSqEIVApF4IsUCQkJFBcXR729vVYLUV1dHbednZ1ZLe4w73x8fLRa/oBntJeVlVkt/w4TE0pSUhKVlpbSwsKC1ftzmJmZofHxcfr8/LRa3OGrFPih7u/vue27pHh9faWRkRGanZ21Wv4dJqaJiQkaGxujzMxMft7d3bVGhOL1T/lb8vLyOK63tzerxR2+SYGSlpZGbW1t3GaX4uDggGpqanhMQUEBdXV10dPTE/eFw0kKe6Ywz8XFxdTT00M5OTlcPzo64n6Aem1tbWBtZLSXlxcura2tlJWVxUIXFhbS9PS0NUtij6mvr4+fBwYGAnGUlJTw3rKzs2llZcXz2k7zou0X66M/uLjFNymSk5P59CCIi4uLEClub2+5HxtYWlqijo4O7mtubrbeIHErBcrw8DBnENQrKyu5/+7ujlJSUqiiooJP9OTkJPd3d3fT2toa1/v7++nw8JCWl5f5j3TCxHR+fk6Xl5dUVVXFz/Pz8yFxNDU10eLiIm1tbXlaO1LM0fa7v78fyGDr6+u0ubnJ7W7wVYrn52fKzc2lhoaGEClM4ENDQzweaRWnA8UpxbqVAut+fX1xW2JiIqWmpnJ9bm6O++Pj4/md5r04XcfHx1zHSWxpaaGpqSl6eHjgeeEwc4NLfX09X2kmjoyMDPr4+ODxXteONC/afsGPuT4gBTAbMrYGSwGzwXdIEfzhiVhMPGbtzs5Ourq6CpSbmxvuPz095QyHrIU/AenXCRMTTiBO5PX1tdUTPg6va0eaF22/ID8/n8f8GCne39+pqKiIg0KxXx9Iq+3t7dyHE+KE+QMGBwdpdHSUy8bGhmspsDZSMe741dVV2tnZ4XciFeO0IjXv7e1xQXzp6emBE2jHSVQQLg6va0eaF4sU5eXlPAYHFPK6xXcpADaCoFDsH5pIc0iZsX5oBpfGxkbXUgB8hOE6Q2rHh1t1dTXf6ScnJ1xHG8bjx9ze3rZmSdxKAbyu7TQvlv3i8JgrxB5PLPgihfJ/oVIoApVCEagUikClUAQqhSJQKRSBSqEIVApFoFIoApVCEagUikClUAQqhSJQKRSBSqEIVArFBtFvIRpisdQVU6EAAAAASUVORK5CYII=" />
-                      </ui:WaitImageAppear.Image>
-                      <ui:WaitImageAppear.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a4d9a911-1d7f-46be-9d29-225e0b611267" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:WaitImageAppear.Target>
-                    </ui:WaitImageAppear>
-                    <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_2">
-                      <ui:SetClippingRegion.Size>
-                        <ui:Region Rectangle="0, 0, 0, 0" />
-                      </ui:SetClippingRegion.Size>
-                    </ui:SetClippingRegion>
-                    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get No line" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_16">
-                      <ui:GetOCRText.OCREngine>
-                        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
-                          <ActivityFunc.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
-                          </ActivityFunc.Argument>
-                          <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_16" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[NoLine]">
-                            <ui:GoogleOCR.AllowedCharacters>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ui:GoogleOCR.AllowedCharacters>
-                            <ui:GoogleOCR.DeniedCharacters>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ui:GoogleOCR.DeniedCharacters>
-                          </ui:GoogleOCR>
-                        </ActivityFunc>
-                      </ui:GetOCRText.OCREngine>
-                      <ui:GetOCRText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="98e999bc-0bc2-45c3-8bfd-48dfc6873510" InformativeScreenshot="e8951b924bb3a55caac315d907116487">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:GetOCRText.Target>
-                    </ui:GetOCRText>
-                    <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_3">
-                      <ui:SetClippingRegion.Size>
-                        <ui:Region Rectangle="0, 0, 0, 0" />
-                      </ui:SetClippingRegion.Size>
-                    </ui:SetClippingRegion>
-                    <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Total" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_6">
-                      <ui:WaitImageAppear.Image>
-                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAWCAYAAAC8J6DfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPGSURBVFhH7ZhpUxpBEIbnlwkeUbRKKA+8QJSUMR+8j1JEoogciXhFRWPkPkRRf2Nneiqz7iytITq1n/zwUFsz7/TbzM72zC57eHyC0dFRaGtrEzidTpid/QqdnZ2wuxsF7H+N45NToZXjKTB+pVojx7eCDg878mSNhyc4v7iE9vZ20mBoaBg2Nja5yS2g1kw2m4eOjg5ynJXJyUDT+FbQ4WFHnghrNB4ByWQuYWRkhDRAuro+wd5eTGgl09NBRTM4OAjJZApOT89gayvc9AcODtLK+FbQ4WFHngi7bzyAmbPzC1hbX+crlb6T6cNDoSuWSuBwOI12XNn5QlGJFQ5vK2OnpqaV/n+hw8OOPCXs7r4BFD09PbAVDou62dvbaxiNj4+L/mh0z5LAVFOMQrGkaPCPVGu3TbqX0OFhR54SVr9rAIJ1JV8oiWsEJ3OXJ4LXR8cnhhEWcWybm5tXElhbWzfGmunr61N0P88uSB2FDg878pQwrBkul0sEWFlZhXr9XiAmk69KvM7ni4aJw+EQbVioZRuys7NrjDXj9ap1OB5PkDoKHR525ClhCV6IZYDu7m7I5vJwW78Tk7nDJxOvceORmv7+ftHm9XqNNmQ/HhftVvz+SUUXiXwjdRQ6POzIU8JK5Qq43W4jCK7S+fkF8TgHg0Fx5sQaIvtXV9egdluHAb4jyjYEbwq2WwkE1JWxGQqROgodHnbkKWHVWh3OzzP86NOlBKOY8PmgVK7y4lwX509zXyKREu1WrI9ZiJcVSkehw8OOPCWsyg/jyPX1jSjWbrfHWIlYH/HRn5jwifpZxon8qx8bG1fMY7F9o8+M3+9XdFizKB2FDg878pSwSqUGFFgzI5Edsg8JBKYU8+3tCKkbHlZXBhZ2Skehw8OOPCWszH8opoOfIZn6TvYhC4tLivkyPwlQOpfr+YyKXGSuSB2FDg878pTwDagq6uD/Eo0+7/CIz+dv0lxeXSsarMvFUqVJ9xI6POzIU8Jw0Fv4fZPjtfX5lRPrbObyl6JZWlpWkpyZ+aL0I6HQFmxshgzMMXR46MqzFVixWIa3gqbmJDwej9ioUqkfIkHcwMz96fRRUwzzsQtJJJJKvw4PHTFagRX4z1vBxwN3e3MiL4HnVSqG0zKZcT6Z5n4dHjpitALD9/H3kD484on2kIlJ8BNYNlcgxzudlsmMJ5s07/VAdMT4FyzH37vfC975Rf64DAwMiuKNX+vxTQoPwnuxODlGYp3MfX4koXTv8ZDoiPEaLMfvxAd6YLisP9ADu8nm4QMd5OEPH50LxW4LafcAAAAASUVORK5CYII=" />
-                      </ui:WaitImageAppear.Image>
-                      <ui:WaitImageAppear.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cbf9382b-05bb-4679-b1ae-0b214dc01dba" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:WaitImageAppear.Target>
-                    </ui:WaitImageAppear>
-                    <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_8">
-                      <ui:SetClippingRegion.Size>
-                        <ui:Region Rectangle="0, 0, 0, 0" />
-                      </ui:SetClippingRegion.Size>
-                    </ui:SetClippingRegion>
-                    <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get Total" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_17">
-                      <ui:GetOCRText.OCREngine>
-                        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
-                          <ActivityFunc.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
-                          </ActivityFunc.Argument>
-                          <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_17" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[Total]">
-                            <ui:GoogleOCR.AllowedCharacters>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ui:GoogleOCR.AllowedCharacters>
-                            <ui:GoogleOCR.DeniedCharacters>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ui:GoogleOCR.DeniedCharacters>
-                          </ui:GoogleOCR>
-                        </ActivityFunc>
-                      </ui:GetOCRText.OCREngine>
-                      <ui:GetOCRText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="85c4b1a3-1e40-4746-933d-57d74e4f94a0" InformativeScreenshot="6bf68e14796cb5f26e9aff959afa81fe">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:GetOCRText.Target>
-                    </ui:GetOCRText>
-                    <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_9">
-                      <ui:SetClippingRegion.Size>
-                        <ui:Region Rectangle="0, 0, 0, 0" />
-                      </ui:SetClippingRegion.Size>
-                    </ui:SetClippingRegion>
-                  </Sequence>
+                  </ui:GetOCRText>
+                  <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_3">
+                    <ui:SetClippingRegion.Size>
+                      <ui:Region Rectangle="0, 0, 0, 0" />
+                    </ui:SetClippingRegion.Size>
+                  </ui:SetClippingRegion>
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Total" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_17">
+                    <ui:GetOCRText.OCREngine>
+                      <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                        <ActivityFunc.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                        </ActivityFunc.Argument>
+                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_17" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="2" Text="[Total]">
+                          <ui:GoogleOCR.AllowedCharacters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:GoogleOCR.AllowedCharacters>
+                          <ui:GoogleOCR.DeniedCharacters>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:GoogleOCR.DeniedCharacters>
+                        </ui:GoogleOCR>
+                      </ActivityFunc>
+                    </ui:GetOCRText.OCREngine>
+                    <ui:GetOCRText.Target>
+                      <ui:Target Element="{x:Null}" Id="85c4b1a3-1e40-4746-933d-57d74e4f94a0" InformativeScreenshot="e81115dca4ff7d514e0bb51de6e79364" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target.ClippingRegion>
+                          <ui:Region Rectangle="880, 690, 92, 32" />
+                        </ui:Target.ClippingRegion>
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetOCRText.Target>
+                    <ui:GetOCRText.Text>
+                      <OutArgument x:TypeArguments="x:String">[Total]</OutArgument>
+                    </ui:GetOCRText.Text>
+                  </ui:GetOCRText>
                 </Sequence>
               </ActivityAction>
             </ui:WindowScope.Body>
           </ui:WindowScope>
-          <If Condition="[CustomerInfo.Contains(&quot;No Customer Information&quot;) OR NoLine.Contains(&quot;No LInes&quot;) OR Total.Contains(&quot;0.00&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[CustomerInfo.Contains(&quot;No Customer Information&quot;) OR NoLine.Contains(&quot;No Lines&quot;) OR Total.Contains(&quot;0.00&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
               <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="x:Boolean">[VerifySale]</OutArgument>
+                  <OutArgument x:TypeArguments="x:Boolean">[SalePageCheck]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
                   <InArgument x:TypeArguments="x:Boolean">True</InArgument>
@@ -290,13 +239,13 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[VerifySale]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[SalePageCheck]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Throw Exception="[new Exception(&quot;Sale screen not viewed&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                <Throw Exception="[new Exception(&quot;Sale screen not shown&quot;)]" sap:VirtualizedContainerService.HintSize="262.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
               </Sequence>
             </If.Else>
           </If>

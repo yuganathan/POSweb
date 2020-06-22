@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>876,1430.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1130.4,1430.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,7 +58,6 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="838.4,1265.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -104,13 +103,9 @@
         </sap:WorkflowViewStateService.ViewState>
         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="InvokeMethods\OpenAppMenuCheck.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <OutArgument x:TypeArguments="x:Boolean" x:Key="AppMenuCheck">
-              <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="AppMenuCheck" />
-            </OutArgument>
+            <OutArgument x:TypeArguments="x:Boolean" x:Key="AppMenuCheck">[AppMenuCheck]</OutArgument>
             <InOutArgument x:TypeArguments="x:String" x:Key="Logger" />
-            <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">
-              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataTable.Rows(0).Item(&quot;Scenario&quot;).ToString" />
-            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">[TestDataTable.Rows(0).Item("Scenario").ToString]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
         <FlowStep.Next>
@@ -134,12 +129,8 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="POSInquire" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="InvokeMethods\POSInquire.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSInquire">
-                      <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="VerifyPOSInquire" />
-                    </OutArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">
-                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataTable.Rows(0).Item(&quot;Scenario&quot;).ToString" />
-                    </InArgument>
+                    <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSInquire">[VerifyPOSInquire]</OutArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">[TestDataTable.Rows(0).Item("Scenario").ToString]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <FlowStep.Next>
@@ -163,12 +154,8 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Transation Search" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="InvokeMethods/SaleSlipInquire.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSSales">
-                              <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="VerifyPOSSales" />
-                            </OutArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">
-                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataTable.Rows(0).Item(&quot;Scenario&quot;).ToString" />
-                            </InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSSales">[VerifyPOSSales]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">[TestDataTable.Rows(0).Item("Scenario").ToString]</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                         <FlowStep.Next>
@@ -192,12 +179,8 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Receipt List" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="InvokeMethods/SaleSlipprint.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSSalesliplist">
-                                      <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="VerifyPOSSalesliplist" />
-                                    </OutArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataTable.Rows(0).Item(&quot;Scenario&quot;).ToString" />
-                                    </InArgument>
+                                    <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSSalesliplist">[VerifyPOSSalesliplist]</OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">[TestDataTable.Rows(0).Item("Scenario").ToString]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                                 <FlowStep.Next>
@@ -221,17 +204,11 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Receipt print" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="InvokeMethods\SaleSlipReceipt.xaml">
                                           <ui:InvokeWorkflowFile.Arguments>
-                                            <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">
-                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataTable.Rows(0).Item(&quot;Scenario&quot;).ToString" />
-                                            </InArgument>
+                                            <InArgument x:TypeArguments="x:String" x:Key="ScenarioName">[TestDataTable.Rows(0).Item("Scenario").ToString]</InArgument>
                                             <OutArgument x:TypeArguments="x:Boolean" x:Key="VerifyPOSSaleslipReceipt" />
                                             <InArgument x:TypeArguments="x:String" x:Key="argument1" />
-                                            <OutArgument x:TypeArguments="x:String" x:Key="ReceiptId">
-                                              <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ReceiptId" />
-                                            </OutArgument>
-                                            <OutArgument x:TypeArguments="x:String" x:Key="ReceiptDate">
-                                              <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ReceiptDate" />
-                                            </OutArgument>
+                                            <OutArgument x:TypeArguments="x:String" x:Key="ReceiptId">[ReceiptId]</OutArgument>
+                                            <OutArgument x:TypeArguments="x:String" x:Key="ReceiptDate">[ReceiptDate]</OutArgument>
                                           </ui:InvokeWorkflowFile.Arguments>
                                         </ui:InvokeWorkflowFile>
                                         <FlowStep.Next>

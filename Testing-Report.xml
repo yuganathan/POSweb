@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Test-Suite name="UiPath Project - Test Automation" total="64" passed="58" failures="6" execution-date="06/21/2020 18:53:01" total-time="00:14:11">
+<Test-Suite name="UiPath Project - Test Automation" total="72" passed="60" failures="12" execution-date="06/21/2020 18:53:01" total-time="00:17:22">
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Navigate to the POS Home Page</TestName>
@@ -446,6 +446,62 @@
     <TestName>Check if POS screen is shown after completing the return</TestName>
     <Started>06/21/2020 20:32:16</Started>
     <Ended>06/21/2020 20:32:24</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/22/2020 17:34:10</Started>
+    <Ended>06/22/2020 17:34:27</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/22/2020 17:34:48</Started>
+    <Ended>06/22/2020 17:35:03</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/22/2020 17:37:13</Started>
+    <Ended>06/22/2020 17:37:29</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the Return Slip popup shown</TestName>
+    <Started>06/22/2020 17:38:37</Started>
+    <Ended>06/22/2020 17:38:50</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the popup shown for returning the items</TestName>
+    <Started>06/22/2020 17:38:53</Started>
+    <Ended>06/22/2020 17:39:40</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC2-Return a sales slip</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/22/2020 17:46:30</Started>
+    <Ended>06/22/2020 17:46:51</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/22/2020 17:49:08</Started>
+    <Ended>06/22/2020 17:49:30</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/22/2020 17:52:52</Started>
+    <Ended>06/22/2020 17:53:32</Ended>
     <Status>PASSED</Status>
   </Result>
 </Test-Suite>

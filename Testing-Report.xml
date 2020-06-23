@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Test-Suite name="UiPath Project - Test Automation" total="10" passed="3" failures="7" execution-date="06/22/2020 21:40:58" total-time="00:04:28">
+<Test-Suite name="UiPath Project - Test Automation" total="86" passed="67" failures="19" execution-date="06/22/2020 21:40:58" total-time="00:23:57">
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Navigate to the POS Home Page</TestName>
@@ -69,5 +69,537 @@
     <Started>06/22/2020 22:08:56</Started>
     <Ended>06/22/2020 22:08:58</Ended>
     <Status>Failed</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 15:11:31</Started>
+    <Ended>06/23/2020 15:12:11</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 15:21:06</Started>
+    <Ended>06/23/2020 15:21:10</Ended>
+    <Status>Failed</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 15:28:44</Started>
+    <Ended>06/23/2020 15:29:07</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 15:40:00</Started>
+    <Ended>06/23/2020 15:40:41</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 16:01:37</Started>
+    <Ended>06/23/2020 16:02:01</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 16:02:05</Started>
+    <Ended>06/23/2020 16:02:07</Ended>
+    <Status>Failed</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 16:14:57</Started>
+    <Ended>06/23/2020 16:15:33</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 16:37:59</Started>
+    <Ended>06/23/2020 16:38:31</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 16:40:48</Started>
+    <Ended>06/23/2020 16:41:12</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 16:42:24</Started>
+    <Ended>06/23/2020 16:42:48</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 17:08:43</Started>
+    <Ended>06/23/2020 17:09:07</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 17:09:10</Started>
+    <Ended>06/23/2020 17:09:13</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 17:09:13</Started>
+    <Ended>06/23/2020 17:09:58</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 17:15:00</Started>
+    <Ended>06/23/2020 17:15:23</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 17:15:26</Started>
+    <Ended>06/23/2020 17:15:28</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 17:15:29</Started>
+    <Ended>06/23/2020 17:16:13</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 17:40:36</Started>
+    <Ended>06/23/2020 17:41:13</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 17:55:18</Started>
+    <Ended>06/23/2020 17:55:41</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 17:55:44</Started>
+    <Ended>06/23/2020 17:55:47</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 17:55:47</Started>
+    <Ended>06/23/2020 17:56:32</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 17:59:30</Started>
+    <Ended>06/23/2020 17:59:54</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 17:59:57</Started>
+    <Ended>06/23/2020 18:00:00</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 18:00:00</Started>
+    <Ended>06/23/2020 18:00:14</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 18:14:11</Started>
+    <Ended>06/23/2020 18:14:35</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 18:14:39</Started>
+    <Ended>06/23/2020 18:14:41</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 18:14:41</Started>
+    <Ended>06/23/2020 18:14:56</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 18:14:56</Started>
+    <Ended>06/23/2020 18:15:05</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 18:15:06</Started>
+    <Ended>06/23/2020 18:15:10</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 18:21:11</Started>
+    <Ended>06/23/2020 18:21:56</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 18:22:47</Started>
+    <Ended>06/23/2020 18:23:12</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 18:23:16</Started>
+    <Ended>06/23/2020 18:23:18</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 18:23:18</Started>
+    <Ended>06/23/2020 18:23:33</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 18:23:33</Started>
+    <Ended>06/23/2020 18:23:42</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 18:23:42</Started>
+    <Ended>06/23/2020 18:23:47</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 18:48:10</Started>
+    <Ended>06/23/2020 18:48:33</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 18:48:36</Started>
+    <Ended>06/23/2020 18:48:39</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 18:48:39</Started>
+    <Ended>06/23/2020 18:48:56</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 18:48:56</Started>
+    <Ended>06/23/2020 18:49:05</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 18:49:05</Started>
+    <Ended>06/23/2020 18:49:10</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the product added on entering SKU</TestName>
+    <Started>06/23/2020 18:49:10</Started>
+    <Ended>06/23/2020 18:49:18</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 18:54:07</Started>
+    <Ended>06/23/2020 18:54:59</Ended>
+    <Status>FAILED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 19:32:20</Started>
+    <Ended>06/23/2020 19:32:42</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 19:32:46</Started>
+    <Ended>06/23/2020 19:32:48</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 19:32:48</Started>
+    <Ended>06/23/2020 19:33:03</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 19:33:03</Started>
+    <Ended>06/23/2020 19:33:12</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 19:33:12</Started>
+    <Ended>06/23/2020 19:33:17</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the product added on entering SKU</TestName>
+    <Started>06/23/2020 19:33:17</Started>
+    <Ended>06/23/2020 19:33:26</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 19:37:42</Started>
+    <Ended>06/23/2020 19:38:06</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 19:38:10</Started>
+    <Ended>06/23/2020 19:38:12</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 19:38:12</Started>
+    <Ended>06/23/2020 19:38:27</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 19:38:27</Started>
+    <Ended>06/23/2020 19:38:36</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 19:38:36</Started>
+    <Ended>06/23/2020 19:38:40</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the product added on entering SKU</TestName>
+    <Started>06/23/2020 19:38:41</Started>
+    <Ended>06/23/2020 19:38:50</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the line items added in the Sales screen</TestName>
+    <Started>06/23/2020 19:44:32</Started>
+    <Ended>06/23/2020 19:44:41</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the Transaction Summary shown</TestName>
+    <Started>06/23/2020 19:49:13</Started>
+    <Ended>06/23/2020 19:49:20</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 19:50:43</Started>
+    <Ended>06/23/2020 19:51:06</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 19:51:09</Started>
+    <Ended>06/23/2020 19:51:12</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 19:51:12</Started>
+    <Ended>06/23/2020 19:51:27</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 19:51:27</Started>
+    <Ended>06/23/2020 19:51:36</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 19:51:36</Started>
+    <Ended>06/23/2020 19:51:41</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the product added on entering SKU</TestName>
+    <Started>06/23/2020 19:51:41</Started>
+    <Ended>06/23/2020 19:51:51</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the line items added in the Sales screen</TestName>
+    <Started>06/23/2020 19:51:59</Started>
+    <Ended>06/23/2020 19:52:04</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the Transaction Summary shown</TestName>
+    <Started>06/23/2020 19:52:04</Started>
+    <Ended>06/23/2020 19:52:09</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario></TestScenario>
+    <TestName>Check the Transaction Summary shown</TestName>
+    <Started>06/23/2020 20:02:37</Started>
+    <Ended>06/23/2020 20:02:44</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Navigate to the POS Home Page</TestName>
+    <Started>06/23/2020 21:00:41</Started>
+    <Ended>06/23/2020 21:01:11</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Sales &amp; Returns page</TestName>
+    <Started>06/23/2020 21:01:15</Started>
+    <Ended>06/23/2020 21:01:17</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the customer add</TestName>
+    <Started>06/23/2020 21:01:17</Started>
+    <Ended>06/23/2020 21:01:32</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the salesperson add</TestName>
+    <Started>06/23/2020 21:01:32</Started>
+    <Ended>06/23/2020 21:01:41</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verify the Add Sale Line Popup shown</TestName>
+    <Started>06/23/2020 21:01:41</Started>
+    <Ended>06/23/2020 21:01:46</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the product added on entering SKU</TestName>
+    <Started>06/23/2020 21:01:46</Started>
+    <Ended>06/23/2020 21:01:56</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the line items added in the Sales screen</TestName>
+    <Started>06/23/2020 21:02:04</Started>
+    <Ended>06/23/2020 21:02:09</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the Transaction Summary shown</TestName>
+    <Started>06/23/2020 21:02:09</Started>
+    <Ended>06/23/2020 21:02:14</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Check the ESP/JRP receipt information</TestName>
+    <Started>06/23/2020 21:02:14</Started>
+    <Ended>06/23/2020 21:02:20</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Verifying the Tax method and Gift receipt</TestName>
+    <Started>06/23/2020 21:02:20</Started>
+    <Ended>06/23/2020 21:02:25</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>TC1-Place an order with cash tender</TestScenario>
+    <TestName>Select the Tender type  As CASH</TestName>
+    <Started>06/23/2020 21:02:26</Started>
+    <Ended>06/23/2020 21:02:42</Ended>
+    <Status>PASSED</Status>
+  </Result>
+  <Result>
+    <TestScenario>Place an Order With cash tender</TestScenario>
+    <TestName>Select No For email receipt And click On Done Print</TestName>
+    <Started>06/23/2020 21:02:43</Started>
+    <Ended>06/23/2020 21:03:09</Ended>
+    <Status>PASSED</Status>
   </Result>
 </Test-Suite>

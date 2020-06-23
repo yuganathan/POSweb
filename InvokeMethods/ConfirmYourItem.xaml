@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>843.2,1792.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1068,1964</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ConfirmYourItem_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -32,6 +32,7 @@
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
       <x:String>System.Windows</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -59,11 +60,13 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ConfirmYourItem" sap:VirtualizedContainerService.HintSize="805.6,1588" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ConfirmYourItem" sap:VirtualizedContainerService.HintSize="805.6,1799.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ESPText" />
+      <Variable x:TypeArguments="ui:UiElement" Name="felement" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -71,21 +74,21 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="764,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Check the ESP option shown on confirming the item" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="764,1432.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="764,1644" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="727.2,1201.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="727.2,1412.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Confirm Your Item" sap:VirtualizedContainerService.HintSize="685.6,1108.8" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="e4414824c4e7c2874b779c913dd5b0ee" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Confirm Your Item" sap:VirtualizedContainerService.HintSize="685.6,1320" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="e4414824c4e7c2874b779c913dd5b0ee" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,961.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,1172.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -127,31 +130,32 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get ESP Text" sap:VirtualizedContainerService.HintSize="610.4,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+                  <ui:WaitImageAppear DisplayName="Find ESP" FoundElement="[felement]" sap:VirtualizedContainerService.HintSize="610.4,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                    <ui:WaitImageAppear.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                    </ui:WaitImageAppear.Image>
+                    <ui:WaitImageAppear.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6de979e9-57fb-4032-863a-2d7027308f0b" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:WaitImageAppear.Target>
+                  </ui:WaitImageAppear>
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get ESP " sap:VirtualizedContainerService.HintSize="610.4,131.2" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
                     <ui:GetOCRText.OCREngine>
                       <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                         <ActivityFunc.Argument>
                           <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                         </ActivityFunc.Argument>
-                        <ui:GoogleOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" Invert="False" Language="eng" Profile="Screen" Scale="3">
-                          <ui:GoogleOCR.AllowedCharacters>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </ui:GoogleOCR.AllowedCharacters>
-                          <ui:GoogleOCR.DeniedCharacters>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </ui:GoogleOCR.DeniedCharacters>
-                        </ui:GoogleOCR>
+                        <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="GoogleOCR_3" Image="[Image]" Language="eng" Profile="[OCRProfile.Screen]" Scale="3" />
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target Element="{x:Null}" Id="df84f08b-5152-4105-b7ff-0681eac9f92f" InformativeScreenshot="0934ccb66bfb43fafb31434730df7bcb" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
-                        <ui:Target.ClippingRegion>
-                          <ui:Region Rectangle="484, 340, 198, 33" />
-                        </ui:Target.ClippingRegion>
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -163,13 +167,8 @@
                     <ui:GetOCRText.Text>
                       <OutArgument x:TypeArguments="x:String">[ESPText]</OutArgument>
                     </ui:GetOCRText.Text>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
                   </ui:GetOCRText>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="610.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[ESPText]" />
                   <If Condition="[ESPText.Contains(&quot;ESP&quot;)]" sap:VirtualizedContainerService.HintSize="610.4,364.8" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
                       <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">

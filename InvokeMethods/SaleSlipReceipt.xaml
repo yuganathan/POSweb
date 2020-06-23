@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>876,3532.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>843.2,4151.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SaleSlipInquire_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -65,7 +65,7 @@
       <AssemblyReference>ActiproSoftware.Shared.Wpf</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SaleSlipInquire" sap:VirtualizedContainerService.HintSize="772,3368" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SaleSlipInquire" sap:VirtualizedContainerService.HintSize="772,3986.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:GenericValue" Name="CustomerName" />
       <Variable x:TypeArguments="x:String" Name="LocalCustomer" />
@@ -95,7 +95,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach" sap:VirtualizedContainerService.HintSize="492,2907.2" sap2010:WorkflowViewState.IdRef="WindowScope_7" InformativeScreenshot="d866096ff2ddd8e5afbd85407b5d5c1e" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach" sap:VirtualizedContainerService.HintSize="492,2907.2" sap2010:WorkflowViewState.IdRef="WindowScope_7" InformativeScreenshot="d866096ff2ddd8e5afbd85407b5d5c1e" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
               <ui:WindowScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -128,7 +128,7 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target Element="{x:Null}" Id="ac47c5fb-dc17-4fb4-bfa6-02f188b9a66b" InformativeScreenshot="6084779cf5edddb9479ca481965c72d1" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="ac47c5fb-dc17-4fb4-bfa6-02f188b9a66b" InformativeScreenshot="6084779cf5edddb9479ca481965c72d1" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                           <ui:Target.ClippingRegion>
                             <ui:Region Rectangle="188, 176, 560, 28" />
                           </ui:Target.ClippingRegion>
@@ -171,7 +171,7 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target Element="{x:Null}" Id="17d88228-05cb-4f29-806a-998fc3b0d808" InformativeScreenshot="823737a58b2c80f82312c8fef91b5e82" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="17d88228-05cb-4f29-806a-998fc3b0d808" InformativeScreenshot="823737a58b2c80f82312c8fef91b5e82" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                           <ui:Target.ClippingRegion>
                             <ui:Region Rectangle="293, 132, 156, 37" />
                           </ui:Target.ClippingRegion>
@@ -208,7 +208,7 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target Element="{x:Null}" Id="fd1dc626-c413-4c94-ac41-9ff27d4788ed" InformativeScreenshot="26151cf52105c1399fc4a21fa46a894b" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target Element="{x:Null}" Id="fd1dc626-c413-4c94-ac41-9ff27d4788ed" InformativeScreenshot="26151cf52105c1399fc4a21fa46a894b" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                           <ui:Target.ClippingRegion>
                             <ui:Region Rectangle="188, 109, 106, 26" />
                           </ui:Target.ClippingRegion>
@@ -333,7 +333,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Q" EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_12" SendWindowMessages="False" SimulateType="False" Text="q">
                           <ui:TypeInto.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7cf308e1-0e98-47bf-a0d5-0e4aa3ba5f7c" InformativeScreenshot="7d5e0bcca365f6a52bc84a8967cda7d1" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7cf308e1-0e98-47bf-a0d5-0e4aa3ba5f7c" InformativeScreenshot="7d5e0bcca365f6a52bc84a8967cda7d1" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -345,7 +345,7 @@
                         </ui:TypeInto>
                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type enter" EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_13" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
                           <ui:TypeInto.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6bbc704-51aa-4402-aa93-eb9b895524a5" InformativeScreenshot="e4c197b38636376a42b305d873f4d738" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6bbc704-51aa-4402-aa93-eb9b895524a5" InformativeScreenshot="e4c197b38636376a42b305d873f4d738" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -357,7 +357,7 @@
                         </ui:TypeInto>
                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type " EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_14" SendWindowMessages="False" SimulateType="False" Text="99[k(enter)]">
                           <ui:TypeInto.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="be0d9781-4f00-49a8-9977-cee16e2616dd" InformativeScreenshot="e3d4b6a49b9285ec576714c7eaa4adac" Selector="&lt;ctrl name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="be0d9781-4f00-49a8-9977-cee16e2616dd" InformativeScreenshot="e3d4b6a49b9285ec576714c7eaa4adac" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>

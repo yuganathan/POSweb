@@ -59,6 +59,7 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="SaleSlipInquire" sap:VirtualizedContainerService.HintSize="772,3137.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -221,7 +222,7 @@
                                 <OutArgument x:TypeArguments="s:Int32[]">[countenter]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="s:Int32[]">[{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,19,20}]</InArgument>
+                                <InArgument x:TypeArguments="s:Int32[]">[{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50}]</InArgument>
                               </Assign.Value>
                             </Assign>
                             <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="410.4,362.4" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[countenter]">

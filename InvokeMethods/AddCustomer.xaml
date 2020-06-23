@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1068,3521.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1068,3156.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AddCustomer_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -63,7 +63,7 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddCustomer" sap:VirtualizedContainerService.HintSize="805.6,3356.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddCustomer" sap:VirtualizedContainerService.HintSize="805.6,2992" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="AddSalesLine" />
       <Variable x:TypeArguments="x:String" Name="ReturnSlip" />
@@ -326,28 +326,5 @@
       </TryCatch.Catches>
     </TryCatch>
     <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="764,22.4" sap2010:WorkflowViewState.IdRef="EndTest_2" Orientation="Window" Status="PASSED" />
-    <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="764,324.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '108916021 Vwrcdeskt'" sap:VirtualizedContainerService.HintSize="433.6,232" sap2010:WorkflowViewState.IdRef="WindowScope_5" InformativeScreenshot="9aa33f70add1ebd45595e8f085695a59" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='10.89.160.21 (sterling@reg1) - VNC Viewer' /&gt;">
-        <ui:WindowScope.Body>
-          <ActivityAction x:TypeArguments="x:Object">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </Sequence>
-          </ActivityAction>
-        </ui:WindowScope.Body>
-      </ui:WindowScope>
-    </Sequence>
   </Sequence>
 </Activity>

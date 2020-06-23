@@ -62,6 +62,7 @@
       <Variable x:TypeArguments="x:String" Name="Cash" />
       <Variable x:TypeArguments="x:String" Name="Due" />
       <Variable x:TypeArguments="x:String" Name="ChooseTenderType" />
+      <Variable x:TypeArguments="ui:UiElement" Name="foundElt" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -149,7 +150,7 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find CASH Image " sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                  <ui:WaitImageAppear DisplayName="Find CASH Image " FoundElement="[foundElt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAVCAYAAADiv3Z7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALfSURBVFhH3VRJTFNRFGVlYhzisDNxo0ZduDRGicZEjYkLN5q406WReQhCBWocKJZBDBGRSIiGMLW2QJoGYyQEaEFmUDBtaetCCMQAZfhtGZNj78V+/xea+Akb/+Kk751z77v3vN73o9bW1qBWRK2urkKtULe5lZUVqBXqNre8vAy1Qt3mlpaWoFZsydzCrABDugmaY9mI2ZXAv9VJdZibmtsQm3nyIe7uiEW9tnGD9vXjMPIuFiLxYCoS9qcg56weg9Yh1kY7RznPmGGS5VCtzBNaGRcJWzJXfP0lF86NzmOTJTdKeV90rVgW5+72MF9wpQjaU49kmm/Sh7i9Scy3lLWi+VULNEezELsnEVNj09tjbnFxEUow+tnNRQuvvkAwEBT5xscWlNx8jZlQ02GOGks7rMHwpxHO8fZ/FzVHm5M5ygtzdHZnTRdmJmbg6nCxbkh/L+qEjNAFkDkpFwmKzbWWt3FRe2XHproU1ERlTBVfQuqhdJizG0SNDCQcSEH8vmTUJNeh19wH389ZUQ+b053TozbVIIJG+J/NBYNBKIFFZ+WiQ01fNtXDcP0eq/a3Nky4J1F6q4xHUBrjtLt4lGN3J3Isvd/KuGoIC37R3GYgc9JzIkGxudaKdi5ATUt5aki6p3H6uymCp88riyPM++b5suhtUkz7O7tsLKWx4bGUcpEQFQgEoATefi8XLbhcFDIkiLwpq57/mR/fxnj/4Hg2nl3IR4+5l9Fl6Ma9nfEcR3q/ZQDldyow7hwXz3DY/rxDp319XXffKOqEsDkpFwmKzRHe3K7gwrpoPYwaE48c7fMvPYff7xcbayr4IMvLPZ/HF0DrAesgx9DekmOFVd+EJ6d1zA03j2yPOWpGKebnFmDWNnAReicZRzJDb6UKUxPTrNemGbkxT59Hlkc5xLt71nl7VSeensnlDwt9KGhNHGkOm0M0Jz0jbE7KRcKWzP0vULc5QRCgVqjYnIBfLieFIWhXeTkAAAAASUVORK5CYII=" />
                     </ui:WaitImageAppear.Image>
@@ -185,7 +186,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="c8405d58-200d-4719-90f4-29d7eb3c2b7a" InformativeScreenshot="8b22a9d0f27aa745e0072795be5aa103">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="c8405d58-200d-4719-90f4-29d7eb3c2b7a" InformativeScreenshot="8b22a9d0f27aa745e0072795be5aa103">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -198,7 +199,7 @@
                       <OutArgument x:TypeArguments="x:String">[Cash]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Due Image" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
+                  <ui:WaitImageAppear DisplayName="Find Due Image" FoundElement="[foundElt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAbCAYAAADszNYXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKLSURBVFhH7ZbPTxpBFMf3jwMJEn4YSgMBSSQYEkJM9GQtNKmxUawNBzTgQcSD9GT16lI5Vi6gFRKIAtZabcJP/4PXeS/ZEQKdEk0w23D4LPO+b97sd3dmZ5A6Dw+gVsbmXwqp02ENlTI2/1JI7U4H1Mr/bd5isYBGo+Ho9XpwuVywFg5DoVgcWDMqhjZvtVrB6XSCyWTiDzI5OQnHsjywbhRI7TZrCFDMHxx84VqhUIS5uTnSDQYDVCrVnppR8STzyO3tL5iamqJcPB7nOsZIPn/GtWh0k7RQ6B3Xms0W7OwkYGbGQzNot9shmUzy/DA82TyyurpGuUAgwLVhzUciEdLQdCwWA4/HQ/He3h7v8y+kVrsNIh7NH/TldhIJyuEHrGgYI7l8nmvRaJS0UChEce36GiYmJkj7dnpKWqVaBZ1OR/drNJu8VsSzzG9ubVHO7XZzDWNEZF5OpynWarVQKpfh8vKSmJ6eJv3s/JzXiniW+WAwSLn5hQWuYYyIzB8eHfF+g8hkMrxWhNRqsYaAHvNd+tVVhfZ8zO3uJrmuGMhms1xbWflAGplncTr9lWJcOrKc7gPHVmpFPMl8qVQGn89HutlshpubnzyH5wHqqdRniu/vf4PN9rrHfK32uOZzOTZDTKvXG3B4eATHxzLc3d3z8UQMbV45pHB3wLWKGm5xJydsirv6K2/ZaDTCxsYnmJ2dBa/X22MeWV//SJrNZmPtdfD7/RTjb6PBPtiuMf+G1GQXEYp5BTT+it3w/fIyfL+46Ov/g83C0tJbOonxjeOS2t9PUe3i4hver84Mxre3weFw0CzgmRFmD4H13eOJYOZbrKFOxuZfCgn/Y6gVdZtvsItaUbH5FvwBxhOTFqadcPwAAAAASUVORK5CYII=" />
                     </ui:WaitImageAppear.Image>
@@ -234,7 +235,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="80e330b1-45de-489d-974e-850e5264daef" InformativeScreenshot="dfdc5e2cca8086b5281c5ce98b1c4702">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="80e330b1-45de-489d-974e-850e5264daef" InformativeScreenshot="dfdc5e2cca8086b5281c5ce98b1c4702">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -247,7 +248,7 @@
                       <OutArgument x:TypeArguments="x:String">[Due]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Choose a tender type Image" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
+                  <ui:WaitImageAppear DisplayName="Find Choose a tender type Image" FoundElement="[foundElt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAAAgCAYAAAB6vRjLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATnSURBVHhe7Zj5K21dGMff/8k8T8mQInMiIkWUJGOmkCFDxhRyyVSGhPwkQ8pYivxgHuIHfpOUmeft+9yzzj2OvZ2z8d7de+/61MpZ61n7WWs9+7uetbZ/SCLRGSlCie5IEUp0R4pQojtShBLdkSKU6I4UoUR3pAgluiNFKNEdKUKJ7kgRSnRHilCiO1KEEt35lAhfXl5oYGCAoqKiyNHRkby9vSktLY329/fp6uqKbGxsKDQ01ND7/4+LiwuvSakgDt+JnZ0dj/cd/M55f4VPibCoqIgX4uPjQw0NDdTS0kIJCQk0OTn5R4qws7OT2traqKCggNfm7+/PdZStrS1Dr+/hKyJ8enoy/PrJ75z3V9Aswp2dHV4QMuDZ2Zmh9Sf39/dGEQYHB7NAIdSgoCBaX1839CJaWVmh+Ph4cnV1JT8/PyovL6fr62uD9WP77e0t5efnk6enJzk4OFBgYCD19vayDWAcbAjxbE1NDT+jRFxcHHl4eBj9tLa20uvrq8H6nqWlJV4b5maK2pgiFlh/dXU1nxjmscDGDQgIYIF0d3e/E6El34gz4uPl5UXj4+OGp96iNO/CwkJuW11d5fr5+TnXk5KS3sy7srKSfYeEhNDy8jL3BVribAnNIhwZGTFOVgmxAJS8vDyeHH5HR0ez/eTkxHiEj46OUmlpKduzs7Otsk9NTXG9rq6O1tbWaGxszBj809NTcnJy4mvC/Pw8ZwL0RSCV6OrqosXFRfaTlZXFfWdmZgzW9yi9zI/GNI1FU1MT9fX18W8Ri+PjYxYdNsLg4KBxDkKE1vrOzMyk4eFh2t7e5ufMUZr33t4et2FMIHxPT0+/8d3T08Mxgdjc3d3ZpjXOlvjPRIhM9fz8zPdH090tXkRjYyPXcYQgE6HgtyX7xsYG27H7cnJyWEiXl5fct7+/n222trY8Jgrq2NHmPDw88AZBJkFwIXz0xdVCDaWX+dGYIhY4DUSGtbe3N8ZiaGiI7bW1tVxHtkdd2K3xjbk/Pj5yfzXUMnhqair7vLi4oLCwMM54pqcZYizIzc3lNmxaLXG2Bs0i3N3d5QGVjuO7uzvjAkzvhOiLAoTIkBmAmgjV7AD3mfb2ds6OCASEBMSzZWVldHBwYCxHR0dsN0VsJvhARuro6OC6EIQSSi/zozEtxUKIUKwV8UPdfMNa61sNNRGK9oyMDP5bX1/P7cK36eZBtkUbRKglztbwqQ+T4uJingSOTLy05uZmXqDah4lp4E2PWxwhJSUl3B9ZzRo7MiHS/8LCAhf0c3Nz42DhWRwT2NGYy9zcHN9LlY4JsZuxww8PDyk2NpbrWkX40ZiWYiGOY9wJcd+CCNBfiFCrbzXURAgiIyPZhoLxgPCNUlFRQT9+/OAkII5jLXG2hk+JEMcsXiIWgMnhTpOSksL3DEuBB+LDA8FGylf7MFGyb25uUkxMDN9R4DM8PPzNPQ4X5sTERA4Y+qAv7pHm3NzcUHp6Oo8RERFh/OLXKkKgNqY1scBLhAiRdXAVgCiFCIEW32p8JMKJiQm2JScnG1p+iRAnDK4s2Oj4bf5hYk2creFTIpT8GeBDpqqqigU3OztraP0lQmsE/h1IEf7F+Pr6krOzMwvR9F9TUoSSvw4pQonuSBFKdEeKUKI7UoQS3ZEilOiOFKFEd6QIJbojRSjRGaJ/Acx9NCCPVJM+AAAAAElFTkSuQmCC" />
                     </ui:WaitImageAppear.Image>
@@ -283,7 +284,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="81c653d4-8958-4332-989e-b37ce014fc26" InformativeScreenshot="b25bb13c4e7de6c2469f7ef9272ba1ce">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="81c653d4-8958-4332-989e-b37ce014fc26" InformativeScreenshot="b25bb13c4e7de6c2469f7ef9272ba1ce">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>

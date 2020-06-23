@@ -61,6 +61,7 @@
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Receipt" />
       <Variable x:TypeArguments="x:String" Name="Emailed" />
+      <Variable x:TypeArguments="ui:UiElement" Name="foundElt" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -130,7 +131,7 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find receipt Image" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                  <ui:WaitImageAppear DisplayName="Find receipt Image" FoundElement="[foundElt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAiCAYAAAAaq1Q/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANpSURBVGhD7Za7SytBFIfv/6TgC2LhC8RC4jPGB4koGhSsRTuxScSAhYVRRLHSRmLAtxZ2RhELGxFFLXwRiY+05/I7MMNuGL2bMeh6meKDzNkzJzvfzuyeP5lMhgy5YaRpYKRpYKRpYKRpYKRpYKRpYKRpYKRp4HppPp+POjo6lNd+CtdLm5ubo/n5eeW1z0gmk1RWVqa89lX+2+MJ2d8qra2tjQYHBykej1NlZSUNDQ3Ja/v7+9Td3c03BDo7O2lra8s2HyCGa8ipqamh0dFRur6+tuU4qZV9PJubm6mvr482NzepsbGRioqKqKqqisLhMKXTac7p7e2lgoICSX9/v5yfD5TSurq6WFxDQwMtLy/TwcEBx/f29qiwsJBCoRDt7u7Szs4OC8WNbWxsyPlYEGIDAwO0urpKS0tLvDAs+Pn5Oada2dL8fj9VV1dTIBCgk5MTur+/5+OLeRCHnPPzc37opaWlnIOxmJ8PlNLw9HETQpYAiwYvLy8y9vr6Sk1NTYw1D7vg7e1NxhKJBJWUlLAckeOkVrY0/Ma9nZ6eyhjo6ekhj8cj642MjPDutebkiw+llZeX0/v7u4zhaOFmo9Eo7xYrkUiErz0+PtLt7S3/npiYsNW04rQWclXS8MoQY8HU1BTPu7i44PGPSKuvr7fFjo+P+aY+4+zsjI8DfuNFbJ1vxWkt5KqkYYeKsWBhYYHnHR0d8fhHpOF4WWNioWNjY3R4eKjk6emJjw3yYrGYbb4Vp7WQq5LW0tIixwI8JNREbYxdIe3m5kYu1BrP5u7ujvPGx8dtcbzfrq6u6OHhwXEtoJJWUVFhywHiWF9eXvLYFdIAjgW+gqlUyhafnZ3l4yHGXq+XamtrbXn4QmJR+Jpi7LTWRx8CNK8ihndva2sr/6d4D0MaPjwiJ5/kJG17e5vbBNw4Fg8R2C1YxMzMjMxbX1/nGL5oa2trtLi4yG0CWhghyWktlbS6ujp+566srHDrAkGYNz09LfMmJyc5hmOr6iO/Qk7SABrSYDDIWx+NJd4v6OWy89BrodfD04aw4eFhZXP7r1oqae3t7dwOoWcrLi7mHQtJaFlEHr6i2M2oi75TxPOBUpqbgTSIVF37Low0DYw0DYw0DX6dNDdgpGlgpGlgpGlgpGlgpGlgpGlgpOVMhv4CmZG4a3TwED0AAAAASUVORK5CYII=" />
                     </ui:WaitImageAppear.Image>
@@ -166,7 +167,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="afc73734-95c5-4346-9404-a38b92cb71cb" InformativeScreenshot="f5098792da59d2693661c5e6691f146d">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="afc73734-95c5-4346-9404-a38b92cb71cb" InformativeScreenshot="f5098792da59d2693661c5e6691f146d">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -179,7 +180,7 @@
                       <OutArgument x:TypeArguments="x:String">[Receipt]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find emailed Image " sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
+                  <ui:WaitImageAppear DisplayName="Find emailed Image " FoundElement="[foundElt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAeCAYAAABkDeOuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOLSURBVGhD7ZbLK7xRGMd//9OowSQkpogo98u4FZGFJSIWNm6lyIJhsBFyWyhyzz2yIJdCiR1yN9vn1/epc5qDZt7zTr+FfmfxrTnPfJ/zPufznvc854/f7ycjazKwNGRgacjA0tCvhpWXl0dFRUVyjN+IBXrC0df5fjWsoaEhGh4elmMDS0P/Etbn56c9WOvr61ReXk4ul4vl8XhoaWlJ8RQWFlJ1dTV7c3JyKDIyklJTU2l2dpbu7++poaGB4uLiKD4+nhobG+np6UnJn5qaotzcXM6Dr7S0lLa2thQPFoIFifFPsKzU+vHxQd3d3ZSUlERRUVFUUFBA29vbynzX19f6sNbW1igiIoJBrK6u0srKCtXW1pLD4aDFxUXpw+JSUlKoqqqKTk5O6OrqioqLi3nxFRUVNDExQbe3tzQ9Pc25Xq9X5s7MzHCsvr6e55+fn2f4yD09PZW+ULCs1trX18exlpYW2tzc5JoyMjIoOTlZmU8bVnZ2Nuvt7U3G3t/fKSsriyVieJsoAJBETEBoamqSMSgtLY1qamrkuLe3lyorK3nri9jZ2RnnYmEiFgqWlVqxqxISEpR5oKOjI36ebVjYCZgAW/b5+VlRZ2cn//fw8MBewMK2Dszf2Nhgz/j4uBIvKSmh/Px8JfZVWDBy8fZFLBgsq7VeXl5Kn5hHCPXbhiVoBxN2ALyAlZmZqeTjzIEn8BOA4MW5JsY403p6enhX4LzC5wcht7m5WfqCwbJa6/7+Pv8O7KpCmCtsWK2trXRwcPCjHh8f2RsOLJxtTqeT+vv76fDwkM7Pz1nI1YUVqta9vT32jYyMyHmE0GBsw7q7u5MF/PR/oOzCElDa29sVz83NDcetwrJa68XFBfu+foY4L9GpbcOC8GkkJiZ+a/WDg4M0Ojoqx3ZhHR8fswcXzkBPR0cHx3HNELFgsCArteLAj42NVfIgcb6GBWt5eZnbMQqbm5vjloy3h4kHBgakzy6sl5cXXiA6JObe2dnh3VRXV8cxtHScM3jzoWBZrbWrq4tjuKosLCyQz+fja0N6enp4sCBc9MrKyviSh7MFC52cnFQ8dmFBOEfQHaOjo8ntdnP3en19pbGxMYqJieEuhR0RChZkpVZ02ra2Nr5CoJHg2bu7u3ydwe4UPluw/lcZWBoysDRkYGnIwNKQgaUhA0tDBpaGDCwNGVgaMrA0ZGBpyMCyLD/9BXPVwnlBFjPkAAAAAElFTkSuQmCC" />
                     </ui:WaitImageAppear.Image>
@@ -215,7 +216,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="414fc0f3-2bda-4e2e-ba5c-3b703c47060f" InformativeScreenshot="263e560d2e7736a9224add1de0e9be10">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="414fc0f3-2bda-4e2e-ba5c-3b703c47060f" InformativeScreenshot="263e560d2e7736a9224add1de0e9be10">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>

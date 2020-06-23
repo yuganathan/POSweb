@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>843.2,2172</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>843.2,2421.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReturnSelectedItems_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -59,12 +59,13 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReturnSelectedItems" sap:VirtualizedContainerService.HintSize="772,2007.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReturnSelectedItems" sap:VirtualizedContainerService.HintSize="772,2256.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="AddSalesLine" />
-      <Variable x:TypeArguments="x:String" Name="ReturnSlip" />
+      <Variable x:TypeArguments="x:String" Name="ReturnSlipText" />
+      <Variable x:TypeArguments="x:String" Name="EditBtnText" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -72,7 +73,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Check the Return Slip" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,1789.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,2039.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -80,19 +81,22 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="693.6,1558.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence sap:VirtualizedContainerService.HintSize="693.6,1808" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="ui:UiElement" Name="foundelt" />
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window" sap:VirtualizedContainerService.HintSize="652,1060.8" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="e6f288c71ee56ef5b6c14da110dee9ae" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window" sap:VirtualizedContainerService.HintSize="652,1310.4" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="e6f288c71ee56ef5b6c14da110dee9ae" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,913.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1163.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,12 +138,12 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Return selected items Image " sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
+                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Return Slip Image" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_6">
                     <ui:WaitImageAppear.Image>
-                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJwAAAAfCAYAAAASnKQ7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVgSURBVHhe7ZrbS1VPFMfnDzMvmPdL2t3UVHyLQMUXuxISCqWSimkl4qW0HhQviIhFEeGDiBAGImEIUiIiXsrIStaP7/xamzlz9tY9281+mgUfzpk139lnrX1mz+0cUVpaShZLVIiSkhKyWKJCFBcXk8USFeLKlStksUSFKCoqIoslKsTly5fJYokKcenSJbJYokJcuHCBLJaoEOfPnyeLJSrEuXPnyGKJCnH27Fnyw+LiIrE1Nja6avb29v4p/reDgwP69u0bTU9P0/Xr10+sd6O5uVnGtr29TX///qXv37/Tx48f6fbt2656YJJLe3u7az2j56AbYlH1QeIFpvGwjsu7u7vyWELVTkxMyLrBwUHHZ5qPKaKwsJCOo7y8nA4PD/99JNG7d+9cdRzszs4Ora+v048fP2QZhs7U0NBwIr3Os2fP/qmJVlZW5M3AjYWhfU1NTVwb01za2tpc6xk9B523b9862iDxMqbxsI7LMHQsVcsd7sWLF47PJJ8giIKCAjqOJ0+eyCBWV1fl6/7+vpyPdZ2aLPuuXbtGnz59kv5fv35RRUVFYL0Obgrs6dOnju/ixYv05csX6Z+amorRg5Pk4oZfHQgSLxM0Hi7jIUOu+HmJtWqH82ofNuLMmTN0HDwFPX78mNbW1uT7+/fvx+k42NbW1hg/zl/4SX758mVgvc6fP3+k5uHDhzF+jGJlZWUxPuakuej41YEg8TJB4+Hy7OysfB0eHna04+Pj0vf8+XPP9mEj8vPz6SiuXr0qnw6AX/tfvXolA8LQqms52EePHsXVYV0Gw+jFPlO9zvLystRgKkZcdXV1cmHqpgVh5aLiVwdM41UJGg+X8Vno8Jg1cB9Qp3Y4r/ZhI/Ly8ugourq6ZAAYGVCuqqqSZQzPmJNVrRqs6ge9vb2yDpsC9pnqdaqrq+XiW7Xfv3/T/Pw83blzJ04fVi4qrEMciFWntrbW0ZrGq2IaD+u4XFlZKads2OTkpKwbGxuT5YGBgbj2fvIJgsjJyaGj4Cmos7PT8WHxCKuvr4/R8jTY0tIS4wc8mmAaY5+p3g2MEBj+P3z4EPdlYh2iasPKRYV1XoaRRdWbxKtiGg/ruIy1MEY2bE4w0qE8Ojoq6/r7++Pae5mejykiOzubvMDfSTD9wL5+/Sp3VoB3k2/evInRq8mqfvD+/XtZt7Cw4PhM9X7ATu/z58+y7ebmpuMPMxcVvzovvOLVCRoPl7FORHlkZESWX79+7bxHh/NqHzYiKyuLvMDC+ijDVIR5mfUcLM6a1Ovgy8aTBevu7g6sV8Ea7MGDB3JU0Otu3Lgh28LwVMEXVi46fnWm8eoEjYfL2JSgjA3Zz58/5cPHD3VfX59n+7ARmZmZ5AVPQUNDQzH+3NxcZ2S4d++e41eDZR8S5cUyDjlxBBFUr4KhHYYbh10m+/EUYScGw4jB/jByccOvzjRenaDxcBn3lTU4j4Pxrhkdzqt92IiMjAxyA/9d4ikIZ2N6PYZkGF7Zx8FibYJpa2Njw7kGdke3bt2KuYapXgfrILatrS15nsWLXhimBejCyEUHi2c/OoCRE1q/8bphGk9TU1NMGes3vhZO/PEws2GDxnUm+QRBpKenkxsdHR3yg7Ezcau/e/eurMdUhGkAPg6WDV8ybuzMzIzcJenXMNXrYIjGTzhLS0vyUBU/FeF1bm5OdlbWhZGLbjdv3vSlg+ELgtZvvG6YxoOzPrWMKV29Xk9Pj/TD0OHYb5JPEERaWhpZLFEhTp8+TRZLVIjU1FSyWKJCpKSkkMUSFSI5OZkslqgQSUlJZLFEhUhMTCSLJSrEqVOnyGKJCpGQkEAWSzQk0H8SIz5mtEJF1wAAAABJRU5ErkJggg==" />
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAbCAYAAABsv+EEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASgSURBVGhD7VdpTxVnFO5/grCvBaEFZatQUrAaQCEspSjYiqw1bAVKaqWAQEJExELBKkIp0kAFTKGACKgg0PZDG021sfv64XSeE9/JO8PcMHLvDdNkPjzJPec9d+a85znbvPDv1hbZ2FvYJFgANgkWgE2CBWCTYAHYJFgAuyahICuLPDw8NPDy8qLYqCiqLyujpysrhv+zMmavXaM3jh6liLAwvktocDDfc2l0VGP3YkgItdXVOZSfF06REBsdTV9evapiamCA2uvrKSgggLKOHKF/NjcN/+sIvc3NVHb8uOGZuwH/vb29qaSggKYHB2nlxg0a7+2l15OTyd/Pj9YmJlRbfdA/6exkeyE/L5wiITkhwfBsoL2dK2N+eNjw3BHKT5zYMxKKcnIM7/OTUtGJsbH0UUuLqnM28/VwCwnrk5NMwvCFC6ruz/V1+rCmhhIOHCBfHx+KU6pIvljGoUOa1rY6Ps4Z2NXUpNoAlUVF9NrBg6ocFhpK3WfPUm56OvkomYw2GK7oes6do8aKCnpp3z6uTLSZh/PzmmfJeDMzk16JiTE802OndoT3dTY2ckKFKWd+vr4cr8e3b6s2MtxCAsoYgVyQKuHd0lIOKkr36+lpJgDl//H583yO4CG4b+flsbN/PXhgioTI8HAOXlNlJS2OjDDZCDww2NHB8nezs2xXdeqU5lky+tva2OfC7GyeAX9vbBjaATuRABnzBHfFczZu3qSoiAgqzs9XbWQ4TQIuKfDrvXs0NzREMcpwToqLU2fC0+VlDjgqQX7GOydP8iAXMvqv3I7MkIBgy7LQYSbJuorCQkpNStLo9ED2BipZDDKQzXkZGdTX2sr3ku3MkJB5+LAqA5iV6AC/3L2r0QNOkSBahwxPT092/vu5OdUWxOBMrgxgqKuL9T+vrrK8WxJqTp/W2EDXUF6u0aE1yYQ7AgL++eXLVKs8ExUG/15WshgtVtiYIeE95X1CBkR32Jya0ugBp0iI37+flsfGVCCA6Mc/3rmjsZ3o62MHUA3o2wKQoUd7gt1uSfigqkpjY6RjEpQ5JOvMAFtTSFAQzxyhM0NCqyQDM1eu8F316y7g0pnwZGmJHUCbkfVfXb/ODoxevMj9UY/f799nOz0JAf7+20hAX3UHCRjaoiL1APGYKUI2QwLeJ2Rg7NIljsHWs4ST4fLBjB6KlyHwQoeZgMzHd4Bs+8PiomZjAAmlEgm4uD6YmDWuJuHRwgJ/nDVXV287w1xLS0nRvNMMCfr58/6ZM1zZvz1LOBkuJwHbQEpiIvfTP9bWVD16LJwbUdbWb2/d4jLH/7E6CpscpeRfjY/n9RTk5B87xjs6fuNZHQ0NTIw7KgHbFZIHVYz2ifn1WU8P+wf9p93dqq0ZEuADFpFvZmZosr+fggMDuaKEjQyXkwCg78HxltpaVYftCZkWHRnJswArW3VxMVeJsPlCcRYXQMbg6xuzAlkIGcMRz0NGuWsmYKVMT03luYbKgC/ZaWn8BS3bmSEBBNSVlKj3eSs3d9uWJbBrEmw4hp6UnWCT4AbYJFgANgn/Q9gkWAA2CRaATYIFYJNgAdgk7Dm26D8dG5BFVIyLngAAAABJRU5ErkJggg==" />
                     </ui:WaitImageAppear.Image>
                     <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19bd256d-4c85-4af6-99bf-e7444c8059fb" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c100fa93-30db-4deb-9fbd-e450c66c7b73" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -149,7 +153,7 @@
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
-                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Add sales line OCR Text " sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Return Slip Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
                     <ui:GetOCRText.OCREngine>
                       <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                         <ActivityFunc.Argument>
@@ -170,7 +174,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e5b349fe-dac9-42a5-a4c4-d873e6127064" InformativeScreenshot="a3fb6b7c32a0a800e41a7dd4ed46f3cb">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundelt]" Id="e5b349fe-dac9-42a5-a4c4-d873e6127064" InformativeScreenshot="a3fb6b7c32a0a800e41a7dd4ed46f3cb">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -180,10 +184,25 @@
                       </ui:Target>
                     </ui:GetOCRText.Target>
                     <ui:GetOCRText.Text>
-                      <OutArgument x:TypeArguments="x:String">[AddSalesLine]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String">[ReturnSlipText]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Return Slip OCR Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
+                  <ui:WaitImageAppear DisplayName="Find Edit Button Image" FoundElement="[foundelt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_8">
+                    <ui:WaitImageAppear.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAlCAYAAAATO/pmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOOSURBVGhD3dlbSNNRHMDxPUUPRW9FBNFDVHSHqN4iIgi6PUTQjR56SMGgLCudl7x0ES9ddS2ttIvmJXEUWbacc8um0xlza/Myt9l0Nm94ZV5Sf+0cOD9c/IN2euo8fGG/c84f/bj/Bpuyn04n+ANpNBowGAzQ398Pc3Nz/3XEoNfrqYnYiJFCNVVV0NnZCbOzs0Jlt9upjULbzWb6TM7MzAiZTqcDt9UKMiL2+XwwPT0tZMRGjDKVSgVTU1NCR4wUOjk5KXQInZiYEDqE+v1+oUPo+Pi40CF0bGxM6BA6OjoqdAgdGRkROoQODw8LHUKHhoa4u3c4C8IWRPyxB0cUktex8sOfQ8KmZJwjl12GsoTyoDP/GkIHBwe5I1D5mngwqhoks9XaJa9j5YU9g/iNSTh/UlaBRWvF+V1GBTw6lYszTwgdGBjg7u6hB5C4NUVy729iUKk9Us7pxxQqtfe3IZR8fuONQaX2fs9pdUHGvjsQsfg8XFpxFYpjShHKzpBbtzSujD6+tSst6GXQrLXguVBCaF9fH3cEmrA5Cbwer2S9vb14Nm1PJlxZFQN15fXwrdYGT8/mUzCBsjMEWhL7mj72dHggadt1yDr6ENwtbvD98OG5UEIo+WV4u3PwftBf/fe+qr/Scw6zg85v09/hteQjlHxdAoWyNQZlc8qOm6A8mYMzTwglP5A3ApWvjYfG9ybJPC4PPffltYFCmz42BV2vOKaEuA2JOBNosbwUZwZlM08I7enp4e72gXtwbUuy5N78NHnVFGquaQ5azz3zhELZfGFpFBTFlOBMoA9PPMKZJ4R6vYHXE2cESl+jEnvz0xd9ptD6t8ag9ftHsimUzQzKZgJVHFfizBNCu7u7uWNQqb35fau3Uagq9Q2ufXd/p29GBMrWCPRVdDHOydtvQHbg9mYzTwjt6uriLnP/XYheHQs1BTrpCnV4NmXnTYhaGU3XGj+aQBG4Jcm7MIGyMwzK5rS9mYE3q0R6vs3SjuuhhFCPx8MdgZJn6k+FLzyHZy1fLJC6Ox0iFp2Hi8svw8uoQngeWQCx66/hGQItvFqEc/ULLV07t+QCaAtqcD2UEEq+0xU5hLrdbqFDqMvlEjqEOp1OoUNoR0eH0CHU4XAIHULb2tqEDqGtra1Ch9CWlhahQyj5h6nIUeiHigowmUxgs9mEzGg0AjHKmuvqQK1Wg9VqFbLKykqwNzTAL3+lJ84+LKBDAAAAAElFTkSuQmCC" />
+                    </ui:WaitImageAppear.Image>
+                    <ui:WaitImageAppear.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ba875adb-fe3e-4672-89ca-a7cf64b35020" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:WaitImageAppear.Target>
+                  </ui:WaitImageAppear>
+                  <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get Edit Button Text" sap:VirtualizedContainerService.HintSize="333.6,169.6" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
                     <ui:GetOCRText.OCREngine>
                       <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
                         <ActivityFunc.Argument>
@@ -204,10 +223,7 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target Element="{x:Null}" Id="efccf2f5-0afb-4069-835a-f6abfe008f32" InformativeScreenshot="146815e206e05edcac5f573fdd36524e" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
-                        <ui:Target.ClippingRegion>
-                          <ui:Region Rectangle="328, 225, 81, 27" />
-                        </ui:Target.ClippingRegion>
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundelt]" Id="efccf2f5-0afb-4069-835a-f6abfe008f32" InformativeScreenshot="146815e206e05edcac5f573fdd36524e">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
@@ -217,9 +233,10 @@
                       </ui:Target>
                     </ui:GetOCRText.Target>
                     <ui:GetOCRText.Text>
-                      <OutArgument x:TypeArguments="x:String">[ReturnSlip]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String">[EditBtnText]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[ReturnSlipText+EditBtnText]" />
                 </Sequence>
               </ActivityAction>
             </ui:WindowScope.Body>
@@ -230,7 +247,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WindowScope>
-          <If Condition="[AddSalesLine.Contains(&quot;ADD SALES LINE&quot;) OR ReturnSlip.Contains(&quot;Return Slip&quot;)]" sap:VirtualizedContainerService.HintSize="652,364.8" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[ReturnSlipText.Contains(&quot;Return Slip&quot;) OR EditBtnText.Contains(&quot;Edit&quot;)]" sap:VirtualizedContainerService.HintSize="652,364.8" sap2010:WorkflowViewState.IdRef="If_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

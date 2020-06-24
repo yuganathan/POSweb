@@ -235,7 +235,7 @@
                                     </ActivityFunc>
                                   </ui:GetOCRText.OCREngine>
                                   <ui:GetOCRText.Target>
-                                    <ui:Target Element="{x:Null}" Id="6f59d273-e804-48be-aeda-6c796c82f14f" InformativeScreenshot="7474eb90806b6c590dea2050244357a0" Selector="&lt;ctrl name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                                    <ui:Target Element="{x:Null}" Id="6f59d273-e804-48be-aeda-6c796c82f14f" InformativeScreenshot="7474eb90806b6c590dea2050244357a0" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
                                       <ui:Target.ClippingRegion>
                                         <ui:Region Rectangle="188, 174, 164, 34" />
                                       </ui:Target.ClippingRegion>

@@ -51,6 +51,11 @@
         "editingStatus": "InProgress",
         "testCaseId": "fa9a5c4e-577e-482d-87b1-8d40a6451eed",
         "fileName": "TestCase-Sales&Returns.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "528d2198-77e5-4b22-8f10-31b6db30f63c",
+        "fileName": "TestCase-GetReceipt.xaml"
       }
     ]
   },

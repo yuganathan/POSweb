@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1068,2632.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>842.4,2632.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ClickTotal_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,13 +108,10 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAjCAYAAADc6ffdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOmSURBVGhD7ZdpVxpLEIb717qgHuJy9BCMOZ4L3JBogolGQdELiBrEJbLIJijuS35T3Xn7pptuQG5P5mt/eGaGeqtrpouu6hn28vKLLGaw5+cXspjBnp6eyWIGe3x8IosZ7ME5WMxgDw+PZDGD3d8/kMUMdnd3TxYz2K1zsJjBbm/vyGIGu7m5JYsZ7Pr6hixmsLZzsJjB2u1rspjBrq7aZDGDXV62yS1zc3M0NDQ0kGg0Kv2bzRZtbSUpGAzS+Pg4jY6O0tTUFH36tESl0vkfxwXz8++ktrub1TTBxMQE17e3d/rqprBW64rcsri46Ex2muP3++XDIgHCHovFuG+j0aSFhffSZ2RkxEnYfw8PxsbG6PAw7zouKJcrNDw8LP0ikb+lpiLul0xu99VNYc3WJXlhb/9APmyt3ujRYysrXMOk1jfi1Lhocnv+6Jimp6e55ve/6Rn7f3FBPJHg+uzsLD8j8fXGRY+fSNaWk6xuzQ0MJeKFvb39zqRqdU2rO5PEBKAtLS1rGjg5OZVjk8mkpg2KK0BZQ08kNmlmZoZfZzKZHj+UPjS0gm7NDeziokVeyGY7k6pW65qWy+WldnR0ommCQOAt18PhiGYfFBcUi2W+WgH63pcvsb5xgJqsbs0NDD3FC9nsnpxUpVLTtFQq/aomCIfDXA8G5zX7oLhgfX3j97gg/42+h99YyUiu6iuStbm5pdndwlDjXtjNZuWkzitVTVOTVT6vaJogFApxHbuaah8UF4gSRNKEbXJykttwX9VXJCvhJEu1u4Whr3gB27WcFBKiaLncodRwrWqCQCDA9UgkotkHxT07K8hdEDslGjwQ/TEUCmv+MllOb1PtbmG1WsNpoH9OJtOZFLZyVUP5iHecDx+imgby+WM5Fv1E1QbFXVv7LrV++HxjToKr0l9NlhrHLQz17YV0elc+JBptt76y8pVrWAnfvq3yScCO5o9VAQ1nJEQdNyiu2BSWlz9rdsQQq2tnJyXtIlnxeELzdwurVGvkhXQ6IydVLJV7dPSqhfedl1K8vYuHB7g++JHrGfda3NPTn7IE9w9+aGPAX797IM7CJu6HVT7p/DHdoOTVGK/B0Dy9kEp3mnihWOrrg4RtxON8Rfh8Pv4Wj2Yc/fiRjp13rX5jXou7urrGbRiv+gvwSQMd90GSYVP/nH78k0r1xOkHQ1lYzGCoc4sZrFQ+J4sZDHVtMYPhG8tiBisUSmQxg50VimQxg/10vrMsJhToX8L2NhTf47NNAAAAAElFTkSuQmCC" />
                     </ui:ClickImage.Image>
                     <ui:ClickImage.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e92ec5be-fec1-48e5-af78-d8909ca33fee" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e92ec5be-fec1-48e5-af78-d8909ca33fee" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
@@ -144,13 +141,10 @@
                                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAiCAYAAADbLB6TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARXSURBVGhD7ZfpK39PFMd/f5wlW9bsa7ZElqSQNUmKQrJki6TwgKyhLCUUHlhSJE+QbCkP7Jxv7/OZuV1X936u+o1H86rb5zNnztx77nvOnJn7H2mUogVWjBZYMVpgxWiBFaMFVowWWDFaYMVogRWjBVaMFlgxWmDFeBV4eXmZiouLKSoqivz8/Cg8PJxKSkpob29PeLgnPj6efHx8aH19XVj+f7KysvgZTldTU5PwVo+jwBMTE0ZQ2dnZLGxERAS3AwMD6fT0VHi64y8ErqiooKSkJL5iYmKM+BMTEw17b2+v8FaPo8DIWgQHoSXPz88sNuytra3C6o6/ENjM7u6uIfDT05Ow/i2OAvv7+3NwKysrwuLh7u6O7u/vRcsDhEdmJCcnc3anpKTQ2NgYfX19CY+fAn9+ftLIyAhlZGTwGPSPjo5ynwTPaW5u5r6AgAD+7ejo4Od5w0lgb/HOzMzwuLi4OONZ19fXFBwczPadnR22ecNR4NzcXL5ZaGgo9ff30/7+Pr2+vore7zQ2NrIvsrunp4fHoI1AJVaBIRTasA8MDFBmZia38aKSgoICtpWXl1NnZyfl5+dzu66uTnjY4ySwm3hLS0vZ1tXVxe2qqiput7S0cNsNjgIfHx8bZUJeyCI82DyDEB2Bpqen08nJCduGhobYH74Ss8APDw+8aaJ9eHjI/chWrBpspMhuZA76YXt7e2Ofj48PnuypqSluO2EnsNt4b29vWXjEiZWGftTy35QbR4EBbjY7O0s1NTU/xIbdCoTBC0xPT7MPlr/ELPDm5ib/9/X1paurK7q5ueELSxX2s7Ozb2Ng7+7upo2NDdcv6KYGO8ULFhcXjXsgVqzi3+BVYCtHR0eUk5PDD4yNjRVWT81KTU01slJeyBKJWeClpaVvftZre3ubx2AVWY9eyKqFhQXud8JJYDfxAqwiWT7gjwn5DbYCo6BDBMysFXPgWLJbW1v8H+UDWY0ljw3EGrBZYDkGL4hstl7YSM1cXFzQ/Pw8VVZWGuOwhJ2wE9htvKC9vZ3tQUFB/GveH9xgK7AMDstibW1NWD1LCpsN+mQGDw4Ocht1TdLQ0MC2tLQ0YbGvwfI8jcnCpKIMIHMuLy9peHj4RymSZQSryQk7gd3Ge3BwwO+P0ohajQnBieP8/Fx4eMdWYBxXqqurjQCjo6N5l8cGJG1zc3Psu7q6ym0IBvFra2upsLDQsPX19bGfWWDQ1tbGbdwbZ2p5QsAvJhKTgGMR7oFdH1kmY8IHg92JRmInsJt4X15e+AgHG+owkBMj43ODYw1+f3+nyclJysvLo8jISH44vuSw02KZSTAZOHKhLyQkhOrr6+nx8ZEFxKwnJCSwn1VgBIndG/3y3hAaYyXInLKyMgoLC+PTBL7OIDY2Rm/YCewmXnmELCoqEqM8pw+cImAfHx8XVmd+vclpfocWWDFaYMVogRWjBVaMFlgxWmDFaIEVowVWjBZYKUT/AIB2vR6dHJvEAAAAAElFTkSuQmCC" />
                               </ui:WaitImageAppear.Image>
                               <ui:WaitImageAppear.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="054738c7-959b-43e8-9491-24364f082913" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="054738c7-959b-43e8-9491-24364f082913" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
-                                  <ui:Target.WaitForReady>
-                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                  </ui:Target.WaitForReady>
                                 </ui:Target>
                               </ui:WaitImageAppear.Target>
                             </ui:WaitImageAppear>
@@ -164,13 +158,10 @@
                                 </ActivityFunc>
                               </ui:GetOCRText.OCREngine>
                               <ui:GetOCRText.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed">
+                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
-                                  <ui:Target.WaitForReady>
-                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                  </ui:Target.WaitForReady>
                                 </ui:Target>
                               </ui:GetOCRText.Target>
                               <ui:GetOCRText.Text>

@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1068,2455.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>842.4,2250.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ESPReceiptInformation_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -62,7 +62,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ESPReceiptInformation" sap:VirtualizedContainerService.HintSize="730.4,2290.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ESPReceiptInformation" sap:VirtualizedContainerService.HintSize="730.4,2085.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Phone" />
       <Variable x:TypeArguments="x:String" Name="custName" />
@@ -74,21 +74,21 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="688.8,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Check the ESP/JRP receipt information" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,2072.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688.8,1868" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,1841.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="652,1636.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="ESP Receipt Information" sap:VirtualizedContainerService.HintSize="610.4,1344" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="e3ac87c1ac0fe6409349f90f87585c24" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="ESP Receipt Information" sap:VirtualizedContainerService.HintSize="610.4,1139.2" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="e3ac87c1ac0fe6409349f90f87585c24" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416.8,1196.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416.8,992" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -102,17 +102,14 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
                     </ui:ClickImage.Image>
                     <ui:ClickImage.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="40b463b9-4dd8-4cfc-8b02-706ac5511664" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="40b463b9-4dd8-4cfc-8b02-706ac5511664" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <Sequence DisplayName="Find relative image" sap:VirtualizedContainerService.HintSize="375.2,473.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Find relative image" sap:VirtualizedContainerService.HintSize="375.2,371.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -124,13 +121,10 @@
                         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAYCAYAAAD9CQNjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQ/SURBVGhD7VZZL11RFO5/Mg8xXDHGeE0vhoQKaQlBCVViCpcSNK546UWrktJEKX1oa6zSl6LmokHNf2LVt2TvXLendXp70jrNefhy7xr2Puusb59v7VtnZ+dkQB8wyNIRDLJ0BIMsHcEgS0cwyNIRDLJ0BIMsHcEgS0e4lqzAwEBycXGhp0/7FeP/AqImk8lEe3v7V2LV1TUca2tru+L/H3DjyFpZWeXndXd3K8YBUZMSKQZZf5Esq9WqmixXV1fy8/Oj7e0dGTPIUkHW/v4BWSwWioyMJG9vb4qOjqauri46PT2TORsbm1Refp/Cw8PJ09OTf2tqankt4snJyfwsezjKHCBqysvL49+GhgYZUyJLTW2QVKx78+YtFRQUkI+PD9c3NPSC1tc3KDPzNnl5eVFUVBTNzMzKdcfHJ9TR8YjM5njeG2s6O60yriU0I6ukpITzEhMTqbGxkU887J6eHpmTmprKvpycHKqrq6eUlBS20RzE0cCwsDD2paenc+MPD4/kegFR07t3E+Th4cGNxUFATIksNbWFhoayLz4+gUpLSykpKYlt7I1aysrKOAYfSBdE47DBB5Kamx9e5MSzDYUQe2sFTcg6OPjGjTCbzTQ394F9ra2tvC4rK4ttnG7YaK4g4OjomJqamunxY5vcKyMjk/PUyODy8meqqHjA/ysrKznmSJaa2gA0G76iomK28TXBBqAG8H36tCh9S0vLtLX1hdzd3dmenJzkHBwavGNAQAB/dWJ/LaD5zDo5OeUG2Ww2Xgd5EDHREMhQfX09vXw58oPM/S5Za2vrLE9oEOxfzSw1tdm/p7+/P/uePx+UPsg3fFNTUzQyMsr/MTvx7NXVNQbeD/6FhY9ynRbQjCxISkxMDLm5uXG+AE60yJmdfU8JCZdSIgBJ6u9/JnN+lyzYtbV1bEPuIK/4b0+WmtoEWcPDw9IXFBTEvrGxcekTEjoxMUkDAwNyLyWMj7+W67SAJmSNjr7iHJy63t4+lgQMdPjsGyKwuLhEfX1P6M6du5yDJuILQcwZsiBHmC044Zh/iAmy1NbmDFlib0ghvjJHQErFOi2gCVktLZczALNB+IqL77EvNjaWbWg8GoiGiRxASMb09AzbuHXBVpIxAUeyAMw++CCH9uvV1AY4Q9bm5pacWfPzCxzHHMYXpyTxfwrVZJlMQXwLcgRuZIODQ5yDLwQylJ+fT2lpaezDy1gsTfxiOP3IgVzhdOfm5nIO9sEswfNwE7t8nulisJfLW55STfZk7e5+lY0EBFlqakOeM2TBrqqqYjs4OJgvOeKGi1/MSLFOC6gm62fAi+Aai7mBBvv6+lJhYRHt7Ozyi0B+IiIieC/cxrKzs3lw4wsICQlh4uybjqEcFxfHcTRQSUqUyALa2ztkXYIstbU5SxZufLhdYh+Qj+eANDxDrNEK15Jl4ObAIEtHMMjSDc7pOxE/U5e8OLhsAAAAAElFTkSuQmCC" />
                       </ui:WaitImageAppear.Image>
                       <ui:WaitImageAppear.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="59690090-7ef8-4c1f-9af9-95013550a768" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="59690090-7ef8-4c1f-9af9-95013550a768" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
                         </ui:Target>
                       </ui:WaitImageAppear.Target>
                     </ui:WaitImageAppear>
@@ -144,33 +138,26 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed">
+                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
                         </ui:Target>
                       </ui:GetOCRText.Target>
                       <ui:GetOCRText.Text>
                         <OutArgument x:TypeArguments="x:String">[custName]</OutArgument>
                       </ui:GetOCRText.Text>
                     </ui:GetOCRText>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[custName]" />
                   </Sequence>
                   <ui:WaitImageAppear DisplayName="Find Phone" FoundElement="[felement]" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_6">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAZCAYAAAC1ken9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPbSURBVGhD7ZfrSxRRGMb7n7zfdUO8i7qiYAoaqGzsqmCKVCp00Q+FHwoVTRfWSypouppumClmqRVUlnkpy0t5/Sfe9nnpHGZ3B5zVHVCYDz+c8/ied2aeec97zl45Pj4hA/0wDNYZw2CdMQzWGcNgnTEM1hnDYJ0xDNYZw2CdMQzWGcNgnTmTwQkJCRQUFORBREQE5efnU3//M4/YlJQU/v/Y2JiHfpFJTEwkp9PJ1xMTLyguLs4nRivnMthkukrp6emUlpZGkZGR0uyOjk4Ze9kM/v17m5/306fPPG5ra6OioiKfOK2cy+C+vn6p7e39IavVynpSUpLUL5vBc3NzFBYWRgcHhzyuq6ujW7du+8RpJWAGg+npV6wDVAI0pcHNzc0UHx9PMTEx1NTUJF9CMDg4yG0GqyEqKoqKi4vJ5XrpEWMymTjf7Owc3blTT7Gxsar5cP348RPKyTFzPjxHa2ubRy41HI4e95wcOS4ouOZekR0eMf4QUINdLpc0eHd3jzVhcEnJdUpOTqbs7GwZ09vbJ+e2t7ezFhoaSpWVlVRWVsbj4OBgGh+fkHFYHdDz8vLIYrlBtbW1qvnu3r3HGu7/8OEjMpvNPMaSFzFKhodHZB41qqtvqs47jYAZDEPLy8tZz8rKkrowGJWJNnJ0dMxmQ6uoqOAYVLvo4aggMbexsZG13Nxcn3wWi0VqeHllvs3NH/yhoGHJQ1tf3+CljxXkvXIAnmFxccn9IXJ5NeBamD4//4a+fVv1maOFgGxyAKcIaGBk5LmMFYZ0d9ulhiqCVlhYyOOpKd/KBzMzr1lDFf/9u8+ayNfT0yvjsISV+VDxYt7KyldaXf3OZGZmsr68/F7OVXJ4eMStCa0O46GhIcrIyPCJ84dzGawEBqNf4VijjBWGjI6OSs1ut7OGeIzRezFGFYsY8OHDR5n/y5cV1kQ+5abpnW9gYEDOUwMfVMwVwFxxv58/t2h//4Du339AVVVVfI2V5z1HCwHtwWpoMWRycorHQFnBp22aIs47Hz4yxmgTqGZv1tbW5VxBaWmpvJcaoqr95UIYDPNwGoCm/KFSX1//P65AalrybWxsyh68tLTMGqoQle10jtPOzq6cK8C512q1kc1mo4WFt+6+O889G3sCxtvbOz5ztHAhDAadnU9ZQ6upqamRGyZeUlk9WvOJDRK/yhoaGrg/Y4y/aAciTgk2YofDwdfv3i1SSEiI6sfwhwtjMMDGhRNDeHg4RUdH87IVpwCB1nw4KbS0tFBqaipXM87PMHpr65eMUYLWhDixAXZ1dbPh3nH+ciaDDbRjGKwrJ/QPxxK7R79ilG0AAAAASUVORK5CYII=" />
                     </ui:WaitImageAppear.Image>
                     <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2fdb00a3-6ff2-461b-89f6-38ecd6dfc721" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2fdb00a3-6ff2-461b-89f6-38ecd6dfc721" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
@@ -184,20 +171,16 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[felement]" Id="3f109a99-b0a2-4a93-ad36-6f5c6fbe96ed" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:GetOCRText.Target>
                     <ui:GetOCRText.Text>
                       <OutArgument x:TypeArguments="x:String">[Phone]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="375.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[Phone]" />
                   <ui:SetClippingRegion Element="{x:Null}" Region="{x:Null}" Direction="RECTANGLE" DisplayName="Reset clipping region" sap:VirtualizedContainerService.HintSize="375.2,22.4" sap2010:WorkflowViewState.IdRef="SetClippingRegion_3">
                     <ui:SetClippingRegion.Size>
                       <ui:Region Rectangle="0, 0, 0, 0" />

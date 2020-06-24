@@ -103,13 +103,10 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAjCAYAAADsZeb8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATzSURBVGhD7ZnJS11LEIf73zIajahxnhPnEXcqYhRRYxwWouCERlyoC8EgKKgbZxHcGBBxQMQZk4VxwAFnJBqt8Ktnndfn3pwHuectT8HH9VRVd1fX7a5TN1EZGRnkYA+Vnp5ODvZQaWlp5GAPlZqaSg72UCkpKeRgD5WcnEwO9lBJSUnkYA+VmJhIDvZQ79+/Jwd7qHfv3pGDPVR8fDw52EPFxcWRpzQ3N9Pa2hpdXFzQr1+/6ObmhlZXV+nTp0+GD2qGSE1NjWk8WFlZYdv4+Lihu76+Zp0u9/f39OPHDxoYGODeTJ9D96+rqzPZcFLu7u5erP/GIGPa29vp+/fv/Pd/yczMjGleHRUbG0ue0N3d/TI90d7eHifv6uqKn3/+/EkfPnxgv4SEBNZBqqur3eZZXl5mG5IoOtng8fExbW9vMwcHB6yDYC19Dj2Jk5OTJltFRcWL5R+RGGTM58+faWFhgY6Ojpjz83PWQ7C+6AcHB03z6qiYmBjyhMvLS16oq6vL0CFh3759Y/3ExATrUHhFqqqqDF9Bkjg2Nmbo9A3qvlhLJCcnx80fMZ2dnZnGDA0NsU18JAarNWAXQfui26xQ0dHR5AmPj4+8UGNjo0mflZVFmZmZxjOukwgC1H2BnkTRyQbb2tpMvnl5eayH5ObmuvkvLi7yZ0FBgWHDVb29veXTDJEYrNbQk4hSpNusUFFRUeQJEhQCRJ0qKyvjIuvqB51IZWWlm31paYlto6Ojhk422NraavLt7OxkPU4brpGr/5cvX/izt7eX9fhCIfPz80a8EoPVGrCL4GbpNitUZGQkeUJhYSG/UHR5eHjg04BAxA+FVwQvHH0OoCdRdLJB1KKtrS0GLxXI4eEhlZSUmOYQ/6KiInp+fqaNjQ3W46pCOjo6eA6IxKAnUZ8LdhGUIt1mhQoPDydPwSnDdZibm3NLKDYAH9QMERR51zkkiSMjI4ZOXlB/EiS2r6+PT4Crf3Z2Np+4p6cnrmdfv35lPcqLJFFikDEtLS3GPEB/EWF/us0KFRYWRv8XeCPv7u5yAKenp6yLiIjgZwjaC9cx6+vrbBseHjZ0+gZFh6QVFxfTyckJ23BlXf1xfaGH1NfXc8uFzgE+ksSPHz+axuhrANhFcIt0mxUqNDSU/hb8a25DQwOfNldbeXn5SwjE3xJ0cnV6enpMvijK2CgE9U70skH0obo/QKsBwZUVnfjjxOXn5/Pf8uX09/ezz+bmJj8jPn2M6xp6/Ki7us0KFRISQn8LXiIQXJva2lpDj29FWgqcRNHPzs6yDlcem4QOCZyammI95sFVFH99g6IDOI1yolB7Xf2RRDxjbRHUbugkiYhdH+O6huwNglKk26xQwcHB5AmogyJoUNEfyomD4JqILxKk27AB/MIRwRXU55YN4iWCzYOdnR3uBCBor0pLS9388Z9GeEbjDkHfiE1CpydRH9PU1GTMA/Qk4ovWbVaot2/fkifgGOMnE4JDsEgKPtH9ozi7+mOD09PTtL+/z79ocI3RI+IXhKuvbFAXnFa0NnhZoDb+yR9lBs/S62E98ZEkIvn6GPS54gNgF8HJ121WqKCgIHKwhwoMDCQHe6iAgABysIfy9/cnB3uoN2/ekIM9lJ+fHznYQ/n6+pKDPdTr16/JwR7Kx8eHHOyhvL29ycEe6tWrV+RgD+Xl5UUOdvCi30oHrUgFmq5aAAAAAElFTkSuQmCC" />
                     </ui:ClickImage.Image>
                     <ui:ClickImage.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4bf89bcc-4d30-4783-a22c-8f041b1f52ae" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4bf89bcc-4d30-4783-a22c-8f041b1f52ae" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
@@ -121,13 +118,10 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
                     </ui:ClickImage.Image>
                     <ui:ClickImage.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4807d894-c07c-48b1-813b-16c38e775816" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4807d894-c07c-48b1-813b-16c38e775816" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
@@ -136,13 +130,10 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAiCAYAAAAaq1Q/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANpSURBVGhD7Za7SytBFIfv/6TgC2LhC8RC4jPGB4koGhSsRTuxScSAhYVRRLHSRmLAtxZ2RhELGxFFLXwRiY+05/I7MMNuGL2bMeh6meKDzNkzJzvfzuyeP5lMhgy5YaRpYKRpYKRpYKRpYKRpYKRpYKRpYKRp4HppPp+POjo6lNd+CtdLm5ubo/n5eeW1z0gmk1RWVqa89lX+2+MJ2d8qra2tjQYHBykej1NlZSUNDQ3Ja/v7+9Td3c03BDo7O2lra8s2HyCGa8ipqamh0dFRur6+tuU4qZV9PJubm6mvr482NzepsbGRioqKqKqqisLhMKXTac7p7e2lgoICSX9/v5yfD5TSurq6WFxDQwMtLy/TwcEBx/f29qiwsJBCoRDt7u7Szs4OC8WNbWxsyPlYEGIDAwO0urpKS0tLvDAs+Pn5Oada2dL8fj9VV1dTIBCgk5MTur+/5+OLeRCHnPPzc37opaWlnIOxmJ8PlNLw9HETQpYAiwYvLy8y9vr6Sk1NTYw1D7vg7e1NxhKJBJWUlLAckeOkVrY0/Ma9nZ6eyhjo6ekhj8cj642MjPDutebkiw+llZeX0/v7u4zhaOFmo9Eo7xYrkUiErz0+PtLt7S3/npiYsNW04rQWclXS8MoQY8HU1BTPu7i44PGPSKuvr7fFjo+P+aY+4+zsjI8DfuNFbJ1vxWkt5KqkYYeKsWBhYYHnHR0d8fhHpOF4WWNioWNjY3R4eKjk6emJjw3yYrGYbb4Vp7WQq5LW0tIixwI8JNREbYxdIe3m5kYu1BrP5u7ujvPGx8dtcbzfrq6u6OHhwXEtoJJWUVFhywHiWF9eXvLYFdIAjgW+gqlUyhafnZ3l4yHGXq+XamtrbXn4QmJR+Jpi7LTWRx8CNK8ihndva2sr/6d4D0MaPjwiJ5/kJG17e5vbBNw4Fg8R2C1YxMzMjMxbX1/nGL5oa2trtLi4yG0CWhghyWktlbS6ujp+566srHDrAkGYNz09LfMmJyc5hmOr6iO/Qk7SABrSYDDIWx+NJd4v6OWy89BrodfD04aw4eFhZXP7r1oqae3t7dwOoWcrLi7mHQtJaFlEHr6i2M2oi75TxPOBUpqbgTSIVF37Low0DYw0DYw0DX6dNDdgpGlgpGlgpGlgpGlgpGlgpGlgpOVMhv4CmZG4a3TwED0AAAAASUVORK5CYII=" />
                     </ui:WaitImageAppear.Image>
                     <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1131689c-0549-466c-8062-d8faec7ee914" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1131689c-0549-466c-8062-d8faec7ee914" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
@@ -167,13 +158,10 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="afc73734-95c5-4346-9404-a38b92cb71cb" InformativeScreenshot="f5098792da59d2693661c5e6691f146d">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="afc73734-95c5-4346-9404-a38b92cb71cb" InformativeScreenshot="f5098792da59d2693661c5e6691f146d" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:GetOCRText.Target>
                     <ui:GetOCRText.Text>
@@ -185,13 +173,10 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAeCAYAAABkDeOuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOLSURBVGhD7ZbLK7xRGMd//9OowSQkpogo98u4FZGFJSIWNm6lyIJhsBFyWyhyzz2yIJdCiR1yN9vn1/epc5qDZt7zTr+FfmfxrTnPfJ/zPufznvc854/f7ycjazKwNGRgacjA0tCvhpWXl0dFRUVyjN+IBXrC0df5fjWsoaEhGh4elmMDS0P/Etbn56c9WOvr61ReXk4ul4vl8XhoaWlJ8RQWFlJ1dTV7c3JyKDIyklJTU2l2dpbu7++poaGB4uLiKD4+nhobG+np6UnJn5qaotzcXM6Dr7S0lLa2thQPFoIFifFPsKzU+vHxQd3d3ZSUlERRUVFUUFBA29vbynzX19f6sNbW1igiIoJBrK6u0srKCtXW1pLD4aDFxUXpw+JSUlKoqqqKTk5O6OrqioqLi3nxFRUVNDExQbe3tzQ9Pc25Xq9X5s7MzHCsvr6e55+fn2f4yD09PZW+ULCs1trX18exlpYW2tzc5JoyMjIoOTlZmU8bVnZ2Nuvt7U3G3t/fKSsriyVieJsoAJBETEBoamqSMSgtLY1qamrkuLe3lyorK3nri9jZ2RnnYmEiFgqWlVqxqxISEpR5oKOjI36ebVjYCZgAW/b5+VlRZ2cn//fw8MBewMK2Dszf2Nhgz/j4uBIvKSmh/Px8JfZVWDBy8fZFLBgsq7VeXl5Kn5hHCPXbhiVoBxN2ALyAlZmZqeTjzIEn8BOA4MW5JsY403p6enhX4LzC5wcht7m5WfqCwbJa6/7+Pv8O7KpCmCtsWK2trXRwcPCjHh8f2RsOLJxtTqeT+vv76fDwkM7Pz1nI1YUVqta9vT32jYyMyHmE0GBsw7q7u5MF/PR/oOzCElDa29sVz83NDcetwrJa68XFBfu+foY4L9GpbcOC8GkkJiZ+a/WDg4M0Ojoqx3ZhHR8fswcXzkBPR0cHx3HNELFgsCArteLAj42NVfIgcb6GBWt5eZnbMQqbm5vjloy3h4kHBgakzy6sl5cXXiA6JObe2dnh3VRXV8cxtHScM3jzoWBZrbWrq4tjuKosLCyQz+fja0N6enp4sCBc9MrKyviSh7MFC52cnFQ8dmFBOEfQHaOjo8ntdnP3en19pbGxMYqJieEuhR0RChZkpVZ02ra2Nr5CoJHg2bu7u3ydwe4UPluw/lcZWBoysDRkYGnIwNKQgaUhA0tDBpaGDCwNGVgaMrA0ZGBpyMCyLD/9BXPVwnlBFjPkAAAAAElFTkSuQmCC" />
                     </ui:WaitImageAppear.Image>
                     <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39a0aee2-6775-46d4-b281-572a746d7192" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39a0aee2-6775-46d4-b281-572a746d7192" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
@@ -216,13 +201,10 @@
                       </ActivityFunc>
                     </ui:GetOCRText.OCREngine>
                     <ui:GetOCRText.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="414fc0f3-2bda-4e2e-ba5c-3b703c47060f" InformativeScreenshot="263e560d2e7736a9224add1de0e9be10">
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElt]" Id="414fc0f3-2bda-4e2e-ba5c-3b703c47060f" InformativeScreenshot="263e560d2e7736a9224add1de0e9be10" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:GetOCRText.Target>
                     <ui:GetOCRText.Text>

@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>876,2175.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>842.4,2175.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>scraping_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -128,13 +128,10 @@
                         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
                       </ui:WaitImageAppear.Image>
                       <ui:WaitImageAppear.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bf07ef11-4fe4-40e3-a247-c5a73b5f66f6" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bf07ef11-4fe4-40e3-a247-c5a73b5f66f6" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
                         </ui:Target>
                       </ui:WaitImageAppear.Target>
                     </ui:WaitImageAppear>
@@ -159,13 +156,10 @@
                         </ActivityFunc>
                       </ui:GetOCRText.OCREngine>
                       <ui:GetOCRText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="fd13f5e4-4ca5-4e85-aae4-d212a21c7505" InformativeScreenshot="4f93e3d6bbe648401ff4c26fbb07c44e">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="fd13f5e4-4ca5-4e85-aae4-d212a21c7505" InformativeScreenshot="4f93e3d6bbe648401ff4c26fbb07c44e" WaitForReady="COMPLETE">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
                         </ui:Target>
                       </ui:GetOCRText.Target>
                       <ui:GetOCRText.Text>
@@ -189,7 +183,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WindowScope>
-          <If Condition="[AppMenu.Equals(&quot;Application Menu&quot;)]" sap:VirtualizedContainerService.HintSize="652,404.8" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[AppMenu.Contains(&quot;Application Menu&quot;)]" sap:VirtualizedContainerService.HintSize="652,404.8" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

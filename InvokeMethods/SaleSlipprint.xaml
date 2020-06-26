@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>842.4,2904.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>842.4,2608.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SaleSlipInquire_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -59,10 +59,9 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SaleSlipInquire" sap:VirtualizedContainerService.HintSize="772,2740" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SaleSlipInquire" sap:VirtualizedContainerService.HintSize="772,2444" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="count" />
       <Variable x:TypeArguments="x:String" Name="listsale" />
@@ -294,26 +293,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="730.4,256" sap2010:WorkflowViewState.IdRef="Sequence_20">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="ui:GenericValue" Name="Client" />
-        <Variable x:TypeArguments="ui:GenericValue" Name="Client1" />
-      </Sequence.Variables>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '108916021 Vwrcdeskt'" sap:VirtualizedContainerService.HintSize="433.6,163.2" sap2010:WorkflowViewState.IdRef="WindowScope_7" InformativeScreenshot="a7e885b6763f3ad5e8f85372ea5f102c" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='10.89.160.21 (sterling@reg1) - VNC Viewer' /&gt;">
-        <ui:WindowScope.Body>
-          <ActivityAction x:TypeArguments="x:Object">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-            </ActivityAction.Argument>
-          </ActivityAction>
-        </ui:WindowScope.Body>
-      </ui:WindowScope>
-    </Sequence>
     <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="EndTest_2" Orientation="Window" Status="PASSED" />
   </Sequence>
 </Activity>

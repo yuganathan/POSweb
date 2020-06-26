@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>876,1962.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>842.4,1962.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>OpenPOSCUI_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -59,7 +59,6 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="OpenPOSCUI" sap:VirtualizedContainerService.HintSize="805.6,1797.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -88,25 +87,19 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send " sap:VirtualizedContainerService.HintSize="652,156" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="40" KeyModifiers="None" SpecialKey="False">
                   <ui:SendHotkey.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="823045f6-4302-4cb7-900d-92c2240f3d63" InformativeScreenshot="92effc3a798fb9755b998f21fc678328" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="823045f6-4302-4cb7-900d-92c2240f3d63" InformativeScreenshot="92effc3a798fb9755b998f21fc678328" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send" sap:VirtualizedContainerService.HintSize="652,156" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="2000" DisplayName="Send" sap:VirtualizedContainerService.HintSize="652,156" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
                   <ui:SendHotkey.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ee245b1a-f574-4cb4-9644-1553446c89aa" InformativeScreenshot="60088f8fd7351d0a18328144921af2a5" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ee245b1a-f574-4cb4-9644-1553446c89aa" InformativeScreenshot="60088f8fd7351d0a18328144921af2a5" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
@@ -131,16 +124,13 @@
                     </ActivityFunc>
                   </ui:GetOCRText.OCREngine>
                   <ui:GetOCRText.Target>
-                    <ui:Target Element="{x:Null}" Id="45e49bea-debf-44cf-b8c1-e5bb91ef1ad7" InformativeScreenshot="4ee7e45cde71ace6d220f4d72e74a8f7" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;">
+                    <ui:Target Element="{x:Null}" Id="45e49bea-debf-44cf-b8c1-e5bb91ef1ad7" InformativeScreenshot="4ee7e45cde71ace6d220f4d72e74a8f7" Selector="&lt;ctrl omit:name='10.89.160.22 (sterling@reg2) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                       <ui:Target.ClippingRegion>
                         <ui:Region Rectangle="399, 86, 188, 33" />
                       </ui:Target.ClippingRegion>
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
                     </ui:Target>
                   </ui:GetOCRText.Target>
                   <ui:GetOCRText.Text>

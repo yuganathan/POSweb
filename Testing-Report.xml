@@ -1,241 +1,241 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Test-Suite name="UiPath Project - Test Automation" total="34" passed="33" failures="1" execution-date="06/25/2020 00:34:00" total-time="00:06:39">
+<Test-Suite name="UiPath Project - Test Automation" total="34" passed="34" failures="0" execution-date="06/26/2020 16:38:03" total-time="00:08:38">
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Navigate to the POS Home Page</TestName>
-    <Started>06/25/2020 00:33:35</Started>
-    <Ended>06/25/2020 00:34:00</Ended>
+    <Started>06/26/2020 16:37:30</Started>
+    <Ended>06/26/2020 16:38:03</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Verify the Sales &amp; Returns page</TestName>
-    <Started>06/25/2020 00:34:04</Started>
-    <Ended>06/25/2020 00:34:06</Ended>
+    <Started>06/26/2020 16:38:06</Started>
+    <Ended>06/26/2020 16:38:09</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check if adding of customer is successful</TestName>
-    <Started>06/25/2020 00:34:06</Started>
-    <Ended>06/25/2020 00:34:22</Ended>
+    <Started>06/26/2020 16:38:09</Started>
+    <Ended>06/26/2020 16:38:28</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check if adding Sales Person is successful</TestName>
-    <Started>06/25/2020 00:34:23</Started>
-    <Ended>06/25/2020 00:34:32</Ended>
+    <Started>06/26/2020 16:38:28</Started>
+    <Ended>06/26/2020 16:38:37</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Verify the Add Sale Line Popup shown</TestName>
-    <Started>06/25/2020 00:34:32</Started>
-    <Ended>06/25/2020 00:34:36</Ended>
+    <Started>06/26/2020 16:38:37</Started>
+    <Ended>06/26/2020 16:38:42</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check the product added on entering SKU</TestName>
-    <Started>06/25/2020 00:34:37</Started>
-    <Ended>06/25/2020 00:34:46</Ended>
+    <Started>06/26/2020 16:38:42</Started>
+    <Ended>06/26/2020 16:38:53</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check the line items added in the Sales screen</TestName>
-    <Started>06/25/2020 00:34:55</Started>
-    <Ended>06/25/2020 00:35:01</Ended>
+    <Started>06/26/2020 16:39:03</Started>
+    <Ended>06/26/2020 16:39:12</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check the Transaction Summary shown</TestName>
-    <Started>06/25/2020 00:35:01</Started>
-    <Ended>06/25/2020 00:35:07</Ended>
+    <Started>06/26/2020 16:39:12</Started>
+    <Ended>06/26/2020 16:39:18</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check the ESP/JRP receipt information</TestName>
-    <Started>06/25/2020 00:35:07</Started>
-    <Ended>06/25/2020 00:35:12</Ended>
+    <Started>06/26/2020 16:39:18</Started>
+    <Ended>06/26/2020 16:39:23</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Verifying the Tax method and Gift receipt</TestName>
-    <Started>06/25/2020 00:35:13</Started>
-    <Ended>06/25/2020 00:35:18</Ended>
+    <Started>06/26/2020 16:39:24</Started>
+    <Ended>06/26/2020 16:39:29</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Check the Cash Tender activity</TestName>
-    <Started>06/25/2020 00:35:19</Started>
-    <Ended>06/25/2020 00:35:35</Ended>
+    <Started>06/26/2020 16:39:29</Started>
+    <Ended>06/26/2020 16:39:50</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Select No For email receipt And click On Done Print</TestName>
-    <Started>06/25/2020 00:35:35</Started>
-    <Ended>06/25/2020 00:36:03</Ended>
+    <Started>06/26/2020 16:39:51</Started>
+    <Ended>06/26/2020 16:40:30</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC1-Place an order with cash tender</TestScenario>
     <TestName>Closing the browser</TestName>
-    <Started>06/25/2020 00:36:03</Started>
-    <Ended>06/25/2020 00:36:04</Ended>
+    <Started>06/26/2020 16:40:32</Started>
+    <Ended>06/26/2020 16:40:33</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC2-Get Slip from CUI</TestScenario>
     <TestName>Verify Application Menu</TestName>
-    <Started>06/25/2020 00:36:05</Started>
-    <Ended>06/25/2020 00:36:07</Ended>
+    <Started>06/26/2020 16:40:33</Started>
+    <Ended>06/26/2020 16:40:35</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC2-Get Slip from CUI</TestScenario>
     <TestName>Launch CHUI application</TestName>
-    <Started>06/25/2020 00:36:07</Started>
-    <Ended>06/25/2020 00:36:09</Ended>
+    <Started>06/26/2020 16:40:35</Started>
+    <Ended>06/26/2020 16:40:42</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC2-Get Slip from CUI</TestScenario>
     <TestName>Check the Sale Slip Inquiries</TestName>
-    <Started>06/25/2020 00:36:09</Started>
-    <Ended>06/25/2020 00:36:18</Ended>
+    <Started>06/26/2020 16:40:42</Started>
+    <Ended>06/26/2020 16:40:52</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC2-Get Slip from CUI</TestScenario>
     <TestName>Sale Slip LIST</TestName>
-    <Started>06/25/2020 00:36:18</Started>
-    <Ended>06/25/2020 00:36:25</Ended>
+    <Started>06/26/2020 16:40:52</Started>
+    <Ended>06/26/2020 16:40:57</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC2-Get Slip from CUI</TestScenario>
     <TestName>Sale Slip LIST</TestName>
-    <Started>06/25/2020 00:36:25</Started>
-    <Ended>06/25/2020 00:36:38</Ended>
+    <Started>06/26/2020 16:40:57</Started>
+    <Ended>06/26/2020 16:41:10</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Navigate to the POS Home Page</TestName>
-    <Started>06/25/2020 00:36:39</Started>
-    <Ended>06/25/2020 00:37:04</Ended>
+    <Started>06/26/2020 16:41:10</Started>
+    <Ended>06/26/2020 16:41:42</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the Return Slip popup shown</TestName>
-    <Started>06/25/2020 00:37:04</Started>
-    <Ended>06/25/2020 00:37:11</Ended>
+    <Started>06/26/2020 16:41:42</Started>
+    <Ended>06/26/2020 16:41:49</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the popup shown for returning the items</TestName>
-    <Started>06/25/2020 00:37:11</Started>
-    <Ended>06/25/2020 00:37:30</Ended>
+    <Started>06/26/2020 16:41:49</Started>
+    <Ended>06/26/2020 16:42:20</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the Return Slip</TestName>
-    <Started>06/25/2020 00:37:30</Started>
-    <Ended>06/25/2020 00:37:39</Ended>
+    <Started>06/26/2020 16:42:21</Started>
+    <Ended>06/26/2020 16:42:34</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check if adding of customer is successful</TestName>
-    <Started>06/25/2020 00:37:39</Started>
-    <Ended>06/25/2020 00:37:55</Ended>
+    <Started>06/26/2020 16:42:34</Started>
+    <Ended>06/26/2020 16:42:55</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check if adding Sales Person is successful</TestName>
-    <Started>06/25/2020 00:37:55</Started>
-    <Ended>06/25/2020 00:38:04</Ended>
+    <Started>06/26/2020 16:42:55</Started>
+    <Ended>06/26/2020 16:43:13</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the Tender options shown</TestName>
-    <Started>06/25/2020 00:38:04</Started>
-    <Ended>06/25/2020 00:38:24</Ended>
+    <Started>06/26/2020 16:43:13</Started>
+    <Ended>06/26/2020 16:43:38</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the Add Cash Tender Popup shown</TestName>
-    <Started>06/25/2020 00:38:24</Started>
-    <Ended>06/25/2020 00:38:33</Ended>
+    <Started>06/26/2020 16:43:38</Started>
+    <Ended>06/26/2020 16:43:47</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the Customer Receipt email question shown</TestName>
-    <Started>06/25/2020 00:38:33</Started>
-    <Ended>06/25/2020 00:38:49</Ended>
+    <Started>06/26/2020 16:43:47</Started>
+    <Ended>06/26/2020 16:44:03</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check the final printing screen</TestName>
-    <Started>06/25/2020 00:38:49</Started>
-    <Ended>06/25/2020 00:39:05</Ended>
+    <Started>06/26/2020 16:44:03</Started>
+    <Ended>06/26/2020 16:44:25</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Check if POS screen is shown after completing the return</TestName>
-    <Started>06/25/2020 00:39:05</Started>
-    <Ended>06/25/2020 00:39:11</Ended>
+    <Started>06/26/2020 16:44:25</Started>
+    <Ended>06/26/2020 16:44:35</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
     <TestScenario>TC3-Return a sales slip</TestScenario>
     <TestName>Closing the browser</TestName>
-    <Started>06/25/2020 00:39:11</Started>
-    <Ended>06/25/2020 00:39:12</Ended>
+    <Started>06/26/2020 16:44:35</Started>
+    <Ended>06/26/2020 16:44:36</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
-    <TestScenario>TC4-Return a sales slip - Invalid Scenario</TestScenario>
+    <TestScenario>TC4-Return a sales slip - Negative Scenario</TestScenario>
     <TestName>Navigate to the POS Home Page</TestName>
-    <Started>06/25/2020 00:39:13</Started>
-    <Ended>06/25/2020 00:39:37</Ended>
+    <Started>06/26/2020 16:44:36</Started>
+    <Ended>06/26/2020 16:45:05</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
-    <TestScenario>TC4-Return a sales slip - Invalid Scenario</TestScenario>
+    <TestScenario>TC4-Return a sales slip - Negative Scenario</TestScenario>
     <TestName>Check the Return Slip popup shown</TestName>
-    <Started>06/25/2020 00:39:38</Started>
-    <Ended>06/25/2020 00:39:45</Ended>
+    <Started>06/26/2020 16:45:05</Started>
+    <Ended>06/26/2020 16:45:16</Ended>
     <Status>PASSED</Status>
   </Result>
   <Result>
-    <TestScenario>TC4-Return a sales slip - Invalid Scenario</TestScenario>
+    <TestScenario>TC4-Return a sales slip - Negative Scenario</TestScenario>
     <TestName>Check the popup shown for returning the items</TestName>
-    <Started>06/25/2020 00:39:45</Started>
-    <Ended>06/25/2020 00:40:33</Ended>
-    <Status>FAILED</Status>
+    <Started>06/26/2020 16:45:16</Started>
+    <Ended>06/26/2020 16:46:25</Ended>
+    <Status>PASSED</Status>
   </Result>
   <Result>
-    <TestScenario>TC4-Return a sales slip - Invalid Scenario</TestScenario>
+    <TestScenario>TC4-Return a sales slip - Negative Scenario</TestScenario>
     <TestName>Closing the browser</TestName>
-    <Started>06/25/2020 00:40:33</Started>
-    <Ended>06/25/2020 00:40:35</Ended>
+    <Started>06/26/2020 16:46:25</Started>
+    <Ended>06/26/2020 16:46:26</Ended>
     <Status>PASSED</Status>
   </Result>
 </Test-Suite>

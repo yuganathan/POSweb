@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>876,2930.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>842.4,3032.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CompleteScreen_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -54,7 +54,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CompleteScreen" sap:VirtualizedContainerService.HintSize="805.6,2765.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CompleteScreen" sap:VirtualizedContainerService.HintSize="805.6,2868" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="SalesReturnsElt" />
     </Sequence.Variables>
@@ -64,21 +64,21 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="764,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Select No For email receipt And click On Done Print" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="764,2548" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="764,2650.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="727.2,2316.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="727.2,2419.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Complete the Sale and Print" sap:VirtualizedContainerService.HintSize="685.6,2224" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="19c467ac5e3c86165557b5e6cb731044" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Complete the Sale and Print" sap:VirtualizedContainerService.HintSize="685.6,2326.4" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="19c467ac5e3c86165557b5e6cb731044" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.22 (sterling@reg2) - VNC Viewer' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,2076.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="652,2179.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -111,7 +111,7 @@
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
-                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Complete" sap:VirtualizedContainerService.HintSize="610.4,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click Complete" sap:VirtualizedContainerService.HintSize="610.4,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
                     <ui:ClickImage.CursorPosition>
                       <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
                     </ui:ClickImage.CursorPosition>
@@ -131,13 +131,10 @@
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
                     </ui:WaitImageAppear.Image>
                     <ui:WaitImageAppear.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8f699763-d0cb-41f3-ba63-df9bf621697a" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8f699763-d0cb-41f3-ba63-df9bf621697a" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
                           <InArgument x:TypeArguments="x:Int32" />
                         </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
@@ -159,6 +156,7 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="610.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Not issuing Certificates" />
                   <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click Submit" sap:VirtualizedContainerService.HintSize="610.4,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
                     <ui:ClickImage.CursorPosition>
                       <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
@@ -297,7 +295,15 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="EndTest_1" Orientation="Window" Status="FAILED" />
+            <Sequence sap:VirtualizedContainerService.HintSize="271.2,217.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Exception" />
+              <t:EndTest DisplayName="End test" sap:VirtualizedContainerService.HintSize="229.6,22.4" sap2010:WorkflowViewState.IdRef="EndTest_1" Orientation="Window" Status="FAILED" />
+            </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>

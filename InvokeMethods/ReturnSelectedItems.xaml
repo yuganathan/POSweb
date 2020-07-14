@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>842.4,2319.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1079.2,2524</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReturnSelectedItems_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -61,7 +61,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReturnSelectedItems" sap:VirtualizedContainerService.HintSize="772,2154.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReturnSelectedItems" sap:VirtualizedContainerService.HintSize="772,2359.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ReturnSlipText" />
       <Variable x:TypeArguments="x:String" Name="EditBtnText" />
@@ -72,7 +72,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <t:StartTest DisplayName="Start test" sap:VirtualizedContainerService.HintSize="730.4,22.4" sap2010:WorkflowViewState.IdRef="StartTest_1" ScenarioName="[ScenarioName]" Status="STARTED" TestCase="Check the Return Slip" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,1936.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="730.4,2141.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -80,7 +80,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="693.6,1705.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence sap:VirtualizedContainerService.HintSize="693.6,1910.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="foundelt" />
           </Sequence.Variables>
@@ -89,13 +89,13 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window" sap:VirtualizedContainerService.HintSize="652,1208" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="e6f288c71ee56ef5b6c14da110dee9ae" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window" sap:VirtualizedContainerService.HintSize="652,1412.8" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="e6f288c71ee56ef5b6c14da110dee9ae" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1060.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1265.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,7 +131,7 @@
                       </ui:Target>
                     </ui:ClickImage.Target>
                   </ui:ClickImage>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Return Slip Image" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_6">
+                  <ui:WaitImageAppear DisplayName="Find Return Slip Image" FoundElement="[foundelt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_6">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAbCAYAAABsv+EEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASgSURBVGhD7VdpTxVnFO5/grCvBaEFZatQUrAaQCEspSjYiqw1bAVKaqWAQEJExELBKkIp0kAFTKGACKgg0PZDG021sfv64XSeE9/JO8PcMHLvDdNkPjzJPec9d+a85znbvPDv1hbZ2FvYJFgANgkWgE2CBWCTYAHYJFgAuyahICuLPDw8NPDy8qLYqCiqLyujpysrhv+zMmavXaM3jh6liLAwvktocDDfc2l0VGP3YkgItdXVOZSfF06REBsdTV9evapiamCA2uvrKSgggLKOHKF/NjcN/+sIvc3NVHb8uOGZuwH/vb29qaSggKYHB2nlxg0a7+2l15OTyd/Pj9YmJlRbfdA/6exkeyE/L5wiITkhwfBsoL2dK2N+eNjw3BHKT5zYMxKKcnIM7/OTUtGJsbH0UUuLqnM28/VwCwnrk5NMwvCFC6ruz/V1+rCmhhIOHCBfHx+KU6pIvljGoUOa1rY6Ps4Z2NXUpNoAlUVF9NrBg6ocFhpK3WfPUm56OvkomYw2GK7oes6do8aKCnpp3z6uTLSZh/PzmmfJeDMzk16JiTE802OndoT3dTY2ckKFKWd+vr4cr8e3b6s2MtxCAsoYgVyQKuHd0lIOKkr36+lpJgDl//H583yO4CG4b+flsbN/PXhgioTI8HAOXlNlJS2OjDDZCDww2NHB8nezs2xXdeqU5lky+tva2OfC7GyeAX9vbBjaATuRABnzBHfFczZu3qSoiAgqzs9XbWQ4TQIuKfDrvXs0NzREMcpwToqLU2fC0+VlDjgqQX7GOydP8iAXMvqv3I7MkIBgy7LQYSbJuorCQkpNStLo9ED2BipZDDKQzXkZGdTX2sr3ku3MkJB5+LAqA5iV6AC/3L2r0QNOkSBahwxPT092/vu5OdUWxOBMrgxgqKuL9T+vrrK8WxJqTp/W2EDXUF6u0aE1yYQ7AgL++eXLVKs8ExUG/15WshgtVtiYIeE95X1CBkR32Jya0ugBp0iI37+flsfGVCCA6Mc/3rmjsZ3o62MHUA3o2wKQoUd7gt1uSfigqkpjY6RjEpQ5JOvMAFtTSFAQzxyhM0NCqyQDM1eu8F316y7g0pnwZGmJHUCbkfVfXb/ODoxevMj9UY/f799nOz0JAf7+20hAX3UHCRjaoiL1APGYKUI2QwLeJ2Rg7NIljsHWs4ST4fLBjB6KlyHwQoeZgMzHd4Bs+8PiomZjAAmlEgm4uD6YmDWuJuHRwgJ/nDVXV287w1xLS0nRvNMMCfr58/6ZM1zZvz1LOBkuJwHbQEpiIvfTP9bWVD16LJwbUdbWb2/d4jLH/7E6CpscpeRfjY/n9RTk5B87xjs6fuNZHQ0NTIw7KgHbFZIHVYz2ifn1WU8P+wf9p93dqq0ZEuADFpFvZmZosr+fggMDuaKEjQyXkwCg78HxltpaVYftCZkWHRnJswArW3VxMVeJsPlCcRYXQMbg6xuzAlkIGcMRz0NGuWsmYKVMT03luYbKgC/ZaWn8BS3bmSEBBNSVlKj3eSs3d9uWJbBrEmw4hp6UnWCT4AbYJFgANgn/Q9gkWAA2CRaATYIFYJNgAdgk7Dm26D8dG5BFVIyLngAAAABJRU5ErkJggg==" />
                     </ui:WaitImageAppear.Image>
@@ -174,6 +174,7 @@
                       <OutArgument x:TypeArguments="x:String">[ReturnSlipText]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[ReturnSlipText]" />
                   <ui:WaitImageAppear DisplayName="Find Edit Button Image" FoundElement="[foundelt]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_8">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAlCAYAAAATO/pmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOOSURBVGhD3dlbSNNRHMDxPUUPRW9FBNFDVHSHqN4iIgi6PUTQjR56SMGgLCudl7x0ES9ddS2ttIvmJXEUWbacc8um0xlza/Myt9l0Nm94ZV5Sf+0cOD9c/IN2euo8fGG/c84f/bj/Bpuyn04n+ANpNBowGAzQ398Pc3Nz/3XEoNfrqYnYiJFCNVVV0NnZCbOzs0Jlt9upjULbzWb6TM7MzAiZTqcDt9UKMiL2+XwwPT0tZMRGjDKVSgVTU1NCR4wUOjk5KXQInZiYEDqE+v1+oUPo+Pi40CF0bGxM6BA6OjoqdAgdGRkROoQODw8LHUKHhoa4u3c4C8IWRPyxB0cUktex8sOfQ8KmZJwjl12GsoTyoDP/GkIHBwe5I1D5mngwqhoks9XaJa9j5YU9g/iNSTh/UlaBRWvF+V1GBTw6lYszTwgdGBjg7u6hB5C4NUVy729iUKk9Us7pxxQqtfe3IZR8fuONQaX2fs9pdUHGvjsQsfg8XFpxFYpjShHKzpBbtzSujD6+tSst6GXQrLXguVBCaF9fH3cEmrA5Cbwer2S9vb14Nm1PJlxZFQN15fXwrdYGT8/mUzCBsjMEWhL7mj72dHggadt1yDr6ENwtbvD98OG5UEIo+WV4u3PwftBf/fe+qr/Scw6zg85v09/hteQjlHxdAoWyNQZlc8qOm6A8mYMzTwglP5A3ApWvjYfG9ybJPC4PPffltYFCmz42BV2vOKaEuA2JOBNosbwUZwZlM08I7enp4e72gXtwbUuy5N78NHnVFGquaQ5azz3zhELZfGFpFBTFlOBMoA9PPMKZJ4R6vYHXE2cESl+jEnvz0xd9ptD6t8ag9ftHsimUzQzKZgJVHFfizBNCu7u7uWNQqb35fau3Uagq9Q2ufXd/p29GBMrWCPRVdDHOydtvQHbg9mYzTwjt6uriLnP/XYheHQs1BTrpCnV4NmXnTYhaGU3XGj+aQBG4Jcm7MIGyMwzK5rS9mYE3q0R6vs3SjuuhhFCPx8MdgZJn6k+FLzyHZy1fLJC6Ox0iFp2Hi8svw8uoQngeWQCx66/hGQItvFqEc/ULLV07t+QCaAtqcD2UEEq+0xU5hLrdbqFDqMvlEjqEOp1OoUNoR0eH0CHU4XAIHULb2tqEDqGtra1Ch9CWlhahQyj5h6nIUeiHigowmUxgs9mEzGg0AjHKmuvqQK1Wg9VqFbLKykqwNzTAL3+lJ84+LKBDAAAAAElFTkSuQmCC" />
@@ -217,6 +218,7 @@
                       <OutArgument x:TypeArguments="x:String">[EditBtnText]</OutArgument>
                     </ui:GetOCRText.Text>
                   </ui:GetOCRText>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[EditBtnText]" />
                 </Sequence>
               </ActivityAction>
             </ui:WindowScope.Body>

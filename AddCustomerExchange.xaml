@@ -2,8 +2,8 @@
   <x:Members>
     <x:Property Name="ScenarioName" Type="InArgument(x:String)" />
     <x:Property Name="CustomerCheck" Type="InOutArgument(x:Boolean)" />
-    <x:Property Name="argument2" Type="InArgument(x:String)" />
     <x:Property Name="SSNNo" Type="InArgument(x:String)" />
+    <x:Property Name="DOB" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />

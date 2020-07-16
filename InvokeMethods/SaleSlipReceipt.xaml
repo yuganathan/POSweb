@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>850.4,5623.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1079.2,5623.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SaleSlipInquire_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -178,7 +178,7 @@
                                           </ActivityFunc>
                                         </ui:GetOCRText.OCREngine>
                                         <ui:GetOCRText.Target>
-                                          <ui:Target Element="{x:Null}" Id="8f7993cd-a083-4fb6-952a-ac9290b98897" InformativeScreenshot="c46356418dc77ae8ca2d0ad6142b5f9a" Selector="&lt;ctrl name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
+                                          <ui:Target Element="{x:Null}" Id="8f7993cd-a083-4fb6-952a-ac9290b98897" InformativeScreenshot="c46356418dc77ae8ca2d0ad6142b5f9a" Selector="&lt;ctrl omit:name='10.89.160.21 (sterling@reg1) - VNC Viewer' role='client' /&gt;">
                                             <ui:Target.ClippingRegion>
                                               <ui:Region Rectangle="769, 7, 132, 45" />
                                             </ui:Target.ClippingRegion>

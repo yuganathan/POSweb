@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>842.4,1772</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1079.2,1772</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReturnSlipCheck_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -56,7 +56,6 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ReturnSlipCheck" sap:VirtualizedContainerService.HintSize="598.4,1607.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -175,7 +174,7 @@
                             <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAuCAYAAACLQF8AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASCSURBVGhD7ZlFTzRBEIb71+IOQRNcA4EDmpDgdiC4BwlyAIK7u7ssLvXl7aTm612mgSzXPjzZnbeqe2q6q2V6xOfnJxn+c35+TkNDQ9Tf308vLy8kPj4+yPCVpaUl6uvrI/H+/k4GewYHB0m8vb2RwZ6TkxMSr6+vZNAjMBEZ9Ijn52cy6BFPT09k0CMeHx/JoEc8PDyQQY9wOBxk0CPu7+/JoEfc3d2RQY+4vb0lgx5xc3NDBj3i+vqaDHrE1dUVGfQIHAxdXl66TVBQEHl4eDjh5+dHMTExVFdXR4eHh7blQHp6ulVmeHjY1gccHx9TQ0MDJSQkyLq9vb0pKiqKqquraW9vz8mX4+np6XHSFxcXKSAgQNrKysqcbN8hvLy86OLiwm04oMjISEpKSpIgeH7wjIwM23Lb29vk6elp+RUUFNj6oYHRMOyHBvL397euca+trS3Ln+Pp7u62tPX1dQoNDZU67oNTQ7b9hEDPoYC7cEBdXV1OenNzs/UQCFC1gdbWVmmLjY2Vv3hoZIqrX0lJibT7+PhQZ2cnnZ6eSn16elp2Cmz5+fmWv2s86AjusOzsbHnGw76/Qe6Dzs7O3EYNSNUXFhakDpDeqg2kpqZKW1tbmxyO+I8TPNXn4OBAZgxstbW1TjYwMzNDubm51Nvba2lqPPv7+xQfHy+vcT9ko1r+Nwj0yF/ggLh3Gc6gsLAwOjo6crJtbGzI4QU2NzepqqpK+iITVL+JiQmpA5wRqzYdHA8aPi0tTf6Pi4uj3d1dW/+fEEi5v8ABRUREUGJioiQ6OlpqGALj4+NfynDjoVdxPTU1Ja8xzJA17DcwMCB1oOrfwfEEBwdbZfPy8mx9f4PAuP8LHJAd4eHhVFNTIx9OLZOSkiLtTU1NloYGhoZGYQ0rLNeFDGD9O9R4+D4AGW7n/xMC6f8XAgMDZQDt7e2WhqV3dHRUDi/YMH+wbXV11Vq9kGGYpAEvweht9p2cnJQamJ2dtXQVzDPqNcdTVFQk55zy8nJ5jblsbm7Oyfc3CFTyF9QGcrWVlpZKG4Yda9jPQNOBYYZsgS8amuvHg3IdDOYoNCxWOvhCc40HOuYgaOgIrvu3iMLCQjkE3IUDwqSo6tib8AqCvRDrycnJUquoqHDy39nZsbIIH+xYr6yslBo2hxiSeGDoY2Nj1jKfmZlp+dvFg+zz9fWVenFxsaX/BoH9BdLUXTggzCHY0AH0GD8sHgyfcuGLlYiHFyZv17qwZMOGX9awj+HVCCBedaOI+y4vL1v+HA/2WayBlpYWqwy2BartOwQCQK+4CwekgkYICQmhrKwsGhkZsXzr6+ulHZO3WgeDwGFHAyADWUeMjY2NcqjChkZHwyC71tbWnOpQG0jVQU5OjrSh87BPc7XbISdpjEuDPQJj36BHDjGDHoGxbtAj8C5k0CPw4mjQI3BWY9AjsI8w6BF4eTToESsrK2TQI/AeY9Aj8AJp0CNwoG7QI/BWa7AHZ05ifn6eDPbg05HAOa3hK/hG19HRQQLHkYb/YFjhCwgax+Fw0D8FgXyY3CiE/QAAAABJRU5ErkJggg==" />
                           </ui:ClickImage.Image>
                           <ui:ClickImage.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f329108c-9f4f-4ec1-8978-9bd31d712344" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='10.89.160.21 (sterling@reg1) - VNC Viewer' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f329108c-9f4f-4ec1-8978-9bd31d712344" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.21 (sterling@reg1) - VNC Viewer' /&gt;" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -211,7 +210,7 @@
                             <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAArCAYAAADsQwGHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIFSURBVFhH1dDZThNhGMbx54aIS1yiRtSgcUONCl3UKzDxCoyauCGugEUKdBFNNCbYDaG1ThcpQbSBHiDiQYlN7X08fprogX05mM7MwXvwm5l0ni/5d1B5eYnaoPLiIrVBZSpIbTA/FaA2mH/upzb4GPdRG5Tj/dQG5VgftUEpep7aoBg5R21QnDxLbVCYOEMvleNB1gqjrLy+LL7vBKzx0/RKKX6B9W+f2Wq12GzUufDmirizC1b4FL1QigX/Bf/VqH8Vt3bhQ7iXbivGAm3Bv9XXFsW9XSb6pHlwTzHmF4M31qvm6wfEM3YhP3aCbilEfSZ4SQwuRv3imU4g/+w43WBF+uXg71XzZ0ywcKZTyI8eo1PWRN/mwRETLJxxAu9DR+nU6sKrtuAf9VVakz5x7xRyT4/QqercYFt062eTS+kb4t4p5EYO0w21wrgcnjLhwt4JZEd66JZaISyGf0pdF/edQnbYPLho0/DkNXHfCcwNHaLbViw5fDFxVdzbhdmhg/TCijXWFt5sbIhbuzD75AC98n/42pe0uLML7x5300vL+dCf4PXlnPlKPeLGLsw82k+vZUO95t7d9nunMPNwH7VBxly0QebBXmqDzP091Abpwd3UBul7u6gNUgM7qQ2SAzuoDZJ3t1MbJMxFGyTubKM2eHt7K7XB9K0t1AbTN7uoSxd/AZX/q4BmZeKsAAAAAElFTkSuQmCC" />
                           </ui:ClickImage.Image>
                           <ui:ClickImage.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f329108c-9f4f-4ec1-8978-9bd31d712344" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='10.89.160.21 (sterling@reg1) - VNC Viewer' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f329108c-9f4f-4ec1-8978-9bd31d712344" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='10.89.160.21 (sterling@reg1) - VNC Viewer' /&gt;" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
